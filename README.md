@@ -1,5 +1,6 @@
 # RTFM
-     <img src="timothywcrane\src\assets\img\rtfm.jpg" width="800px" height="au)
+     <img src="timothywcrane\src\assets\img\rtfm.jpg" >
+    
 A Simple Bash Script That Collects Your Linux Installation's Command Info And Creates A PDF For You To Then Read, Search & Reference.
 
 * This script is NOT optimized in any way for performance. 
