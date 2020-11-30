@@ -16,7 +16,7 @@ I thought rtfm would be a good starting point for my scripting adventures.
 
 Dependencies:
 
-*nix (tested so far exclusively on Debian Buster... but should work on any *nix w/bash AFAIK)
+*nix (tested so far exclusively on Debian Buster... but FAIK it should work on anything that can run bash)
 
 bash - (may work in other shells but my #! announces bash)
 
