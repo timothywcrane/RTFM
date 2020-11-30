@@ -1,5 +1,5 @@
 # RTFM
-A Simple Bash Script That Collects Information On Your Linux Installation's Commands And Creates A PDF For You To Then Read, Search &amp; Reference..
+A Simple Bash Script That Collects Your Linux Installation's Command Info And Creates A PDF For You To Then Read, Search & Reference.
 
 * This script is NOT optimized in any way for performance. 
 * This script is meant to be a "hammer" on purpose. 
