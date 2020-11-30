@@ -42,6 +42,10 @@ while read p; do
   whereis "$p" >> RTFM.txt 2>&1
   echo " " >> RTFM.txt
   echo " " >> RTFM.txt
+  echo "********************** WHICH $p **********************" >> RTFM.txt
+  which "$p" >> RTFM.txt 2>&1
+  echo " " >> RTFM.txt
+  echo " " >> RTFM.txt
   echo "********************** MAN PAGE FOR $p **********************" >> RTFM.txt
   man "$p" >> RTFM.txt 2>&1
   echo " " >> RTFM.txt
