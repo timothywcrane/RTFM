@@ -1,13 +1,13 @@
 # RTFM
  ![RTFM](https://github.com/timothywcrane/RTFM/blob/main/rtfm.jpg?raw=true)
     
-RTFM is a simple Bash script designed to collect your Linux installation's command info and creates 2 text & pdf file sets to read, search & reference:
+RTFM is a simple Bash script that creates 2 text & pdf file sets with your system's command information to read, search & reference:
 
-1 simply listing your system's commands
+1 listing your system's commands
 
 and
 
-1 including various query outputs for each command.
+1 including various info query outputs for each command (whatis, whereis, man, help, apropos)
 
 * This script is NOT optimized in any way for performance. 
 * This script is meant to be a "hammer" on purpose. 
