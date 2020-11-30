@@ -3,7 +3,7 @@ A Simple Bash Script That Collects Information On Your Linux Installation's Comm
 
 * This script is NOT optimized in any way for performance. 
 * This script is meant to be a "hammer" on purpose. 
-* It does what is says and has minimal requirements.
+* It does what it says and has minimal requirements.
 * The debug flag has been used by default to provide a poor man's progress bar. 
 * No PDF formatting flags have been used to be viewer agnostic.
 * The headers between commands are "in your opinion" ugly because they are meant to functional, not fashionable.
