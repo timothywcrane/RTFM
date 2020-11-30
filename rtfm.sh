@@ -43,7 +43,8 @@ while read p; do
 done < commandlist.txt
 #
 ##############################################################################################
-#         3. Create ps file out of the RTFM text then a pdf ebook out of the ps file         #
+# 3. Create ps file out of the RTFM text then a pdf ebook out of the ps file, remove info    #
+# text and ps file, leaving PDF to read                                                      #
 ##############################################################################################
 #
   enscript -p RTFM.ps RTFM
