@@ -1,5 +1,5 @@
 # RTFM
-     ![][https://imgflip.com/i/4obbsn]
+     ![Y U No RTFM!!??!!](https://imgflip.com/i/4obbsn)
 A Simple Bash Script That Collects Your Linux Installation's Command Info And Creates A PDF For You To Then Read, Search & Reference.
 
 * This script is NOT optimized in any way for performance. 
