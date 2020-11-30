@@ -1,7 +1,5 @@
 # RTFM
-<img src="https://imgflip.com/i/4obbsn"
-     alt="Y U No RTFM!!??!!"
-     style="float: left; margin-right: 10px;" />
+     ![][https://imgflip.com/i/4obbsn]
 A Simple Bash Script That Collects Your Linux Installation's Command Info And Creates A PDF For You To Then Read, Search & Reference.
 
 * This script is NOT optimized in any way for performance. 
