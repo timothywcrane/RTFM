@@ -1,7 +1,7 @@
 # RTFM
  ![RTFM](https://github.com/timothywcrane/RTFM/blob/main/rtfm.jpg?raw=true)
     
-RTFM is a simple Bash script that creates 2 text & pdf file sets with your *nix system's command information to read, search & reference:
+RTFM is a simple Bash script that creates 2 text & pdf file sets with your *nix system's command information for you to read, search & reference:
 
 1 listing your system's installed commands
 
