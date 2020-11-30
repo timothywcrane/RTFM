@@ -13,6 +13,9 @@ There, now you have all of the excuses I can make for my first bash script. At l
 Dependencies:
 
 *nix (tested so far exclusively on Debian Buster... but should work on any *nix w/bash AFAIK)
+
 bash - (may work in other shells but my #! announces bash)
+
 enscript - to created a ps file, the P (postscript) in PDF
-ps2pdf - To take the ps file and create a PDF
+
+ghostscript - To take the ps file and create a PDF via it's ps2pdf command
