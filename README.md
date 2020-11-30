@@ -13,7 +13,7 @@ and
 * This script is meant to be a "hammer" on purpose. 
 * It does what it says and has minimal requirements.
 * The debug flag has been used by default to provide a poor man's progress bar. 
-* No pdf formatting or unicode support, allowing rtfm to be viewer agnostic (LOL).
+* No pdf formatting enabled or unicode support included, allowing rtfm to be viewer agnostic (LOL).
 * The headers between commands are functional, not fashionable.
 
 There... Now you have all of the excuses I can make for my first bash script.
