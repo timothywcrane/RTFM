@@ -1,5 +1,5 @@
 # RTFM
-     <img src="timothywcrane\src\assets\img\rtfm.jpg" >
+ ![alt text](https://github.com/timothywcrane/RTFM/blob/main/rtfm.jpg?raw=true)
     
 A Simple Bash Script That Collects Your Linux Installation's Command Info And Creates A PDF For You To Then Read, Search & Reference.
 
