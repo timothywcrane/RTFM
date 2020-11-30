@@ -7,7 +7,7 @@ RTFM is a simple Bash script that creates Linux system command documentation for
 
 and
 
-1 txt/pdf set including various query outputs for each available command (whatis, which,, whereis, man, help & apropos)
+1 txt/pdf set including various query outputs for each available command (whatis, which, whereis, man, help & apropos)
 
 * This script is NOT optimized in any way for performance. 
 * This script is meant to be a "hammer" on purpose. 
