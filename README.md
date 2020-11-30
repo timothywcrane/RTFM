@@ -10,7 +10,8 @@ RTFM is a simple Bash script that collects your Linux installation's command inf
 * No enscript pdf formatting flags have been used nor is there unicode support, allowing rtfm to be viewer agnostic.
 * The headers between commands are "in your opinion" ugly because they are meant to be functional, not fashionable.
 
-There, now you have all of the excuses I can make for my first bash script. At least I know where to start.
+There, now you have all of the excuses I can make for my first bash script. 
+I thought rtfm would be the obvious starting point.
 
 Dependencies:
 
