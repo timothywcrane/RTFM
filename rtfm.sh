@@ -34,16 +34,16 @@ while read p; do
   echo "*********************************************************************************************" >> RTFM.txt
   echo " " >> RTFM.txt
   echo " " >> RTFM.txt
-  echo "********************** WHAT IS $p **********************" >> RTFM.txt
+  echo "********************** WHATIS $p **********************" >> RTFM.txt
   whatis "$p" >> RTFM.txt 2>&1
-  echo " " >> RTFM.txt
-  echo " " >> RTFM.txt
-  echo "********************** WHERE IS $p **********************" >> RTFM.txt
-  whereis "$p" >> RTFM.txt 2>&1
   echo " " >> RTFM.txt
   echo " " >> RTFM.txt
   echo "********************** WHICH $p **********************" >> RTFM.txt
   which "$p" >> RTFM.txt 2>&1
+  echo " " >> RTFM.txt
+  echo " " >> RTFM.txt
+  echo "********************** WHEREIS $p **********************" >> RTFM.txt
+  whereis "$p" >> RTFM.txt 2>&1
   echo " " >> RTFM.txt
   echo " " >> RTFM.txt
   echo "********************** MAN PAGE FOR $p **********************" >> RTFM.txt
