@@ -4,7 +4,9 @@
 RTFM is a simple Bash script designed to collect your Linux installation's command info and creates 2 text and PDF sets that you can then read, search & reference:
 
 1 simply listing commands
+
 and
+
 1 including various query outputs for each command.
 
 * This script is NOT optimized in any way for performance. 
