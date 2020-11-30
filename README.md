@@ -3,11 +3,11 @@
     
 RTFM is a simple Bash script that creates Linux system command documentation for your exact installation to read, search & reference:
 
-1 txt/pdf set listing your system's installed commands
+1 txt/pdf set listing your system's available commands
 
 and
 
-1 txt/pdf set including various query outputs for each installed command (whatis, whereis, man, help prepend & apropos)
+1 txt/pdf set including various query outputs for each available command (whatis, whereis, man, help prepend & apropos)
 
 * This script is NOT optimized in any way for performance. 
 * This script is meant to be a "hammer" on purpose. 
