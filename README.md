@@ -5,7 +5,7 @@ A Simple Bash Script That Collects Information On Your Linux Installation's Comm
 * This script is meant to be a "hammer" on purpose. 
 * It does what it says and has minimal requirements.
 * The debug flag has been used by default to provide a poor man's progress bar. 
-* No PDF formatting flags have been used to be viewer agnostic.
+* No enscript pdf formatting flags have been used or unicode support allowing rtfm to be viewer agnostic.
 * The headers between commands are "in your opinion" ugly because they are meant to be functional, not fashionable.
 
 There, now you have all of the excuses I can make for my first bash script. At least I know where to start.
