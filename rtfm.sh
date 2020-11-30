@@ -1,4 +1,6 @@
-#!/bin/bash -x
+#!/bin/bash -x ##############################################
+# Debugging -x flag above acts as a poor man's progress bar #
+#############################################################
 
 ##########################################
 # Make A Folder To Output RTFM Documents #
