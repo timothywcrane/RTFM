@@ -7,7 +7,7 @@ RTFM is a simple Bash script that creates 2 text & pdf file sets with your *nix 
 
 and
 
-1 also including various query outputs for each command (whatis, whereis, man, help prepend, apropos)
+1 also including various query outputs for each command (whatis, whereis, man, help prepend & apropos)
 
 * This script is NOT optimized in any way for performance. 
 * This script is meant to be a "hammer" on purpose. 
