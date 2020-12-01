@@ -9,6 +9,7 @@
   echo "                            |_|  \_\ |_|  |_|    |_|  |_|                                    "
   echo "                                                                                             "
   echo "                                RTFM INSTRUCTIONS                                            "
+  echo "                                                                                             "
   echo "                   Create A Frigging `uname -o` Manual So                                    "
   echo "                   $USER Can Read It!"
   sleep 4
