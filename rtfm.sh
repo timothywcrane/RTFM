@@ -1,5 +1,5 @@
 #!/bin/bash
-# set -x and set +x flags provide a poor man's progress bar after showing logo display...
+# set -x and set +x flags provide a poor man's progress bar after logo display with 7 second delay...
   echo "                                                                                             "
   echo "                             _____ _______ ______ __  __                                     "
   echo "                            |  __ \__   __|  ____|  \/  |                                    "
@@ -8,13 +8,18 @@
   echo "                            | | \ \  | |  | |    | |  | |                                    "
   echo "                            |_|  \_\ |_|  |_|    |_|  |_|                                    "
   echo "                                                                                             "
-  echo "               Be Patient During Manual Creation ... This May Take A While.                  "
-  echo "                   Hit CTRL+c At Any Time To Force A Messy Exit                              "
-  echo "                Debug enabled to provide a poor-man progress indicator                       "
-  sleep 5
-  echo "                                   Wait For It...                                            "
-  sleep 2
+  echo "                                RTFM INSTRUCTIONS                                            "
+  echo "                   Create A Frigging `uname -o` Manual So                                       "
+  echo "                   $USER Can Read It!"
+  echo "                                                                                             "
+  echo "                   Be Patient On Large Installations                                            "
+  echo "                   Don\'t Panic : Progress Shown As Debug Scrolling                                            "
+  sleep 4
+  echo "                   Panic Keys: CTRL+c For A Messy Exit                "
+  sleep 3
+read -n 1 -r -s -p $'Press ENTER...\n'
   set -x
+  echo "                                                                                             " >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "                             _____ _______ ______ __  __                                     "
   echo "                            |  __ \__   __|  ____|  \/  |                                    "
@@ -24,7 +29,7 @@
   echo "                            |_|  \_\ |_|  |_|    |_|  |_|                                    "
   echo "                                                                                             "
   echo "*********************************************************************************************" >> RTFM
-  echo "Command Manual for $USER referencing:                            " >> RTFM
+  echo "`uname -o` Manual for $USER on `hostname -f`:                            " >> RTFM
   echo "                                                                                             " >> RTFM
   hostnamectl >> RTFM 2>&1
   echo "                                                                                             " >> RTFM
@@ -36,10 +41,11 @@
   echo "                                                                                             " >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "*                                                                                           *" >> RTFM
-  echo "*                                          CONTENTS                                         *" >> RTFM
-  echo "*                                          ********                                         *" >> RTFM
-  echo "*                                       1. Command List                                     *" >> RTFM
-  echo "*                                       2. Command Information                              *" >> RTFM
+  echo "*                                   CONTENTS                                                *" >> RTFM
+  echo "*                                   ********                                                *" >> RTFM
+# echo "*                               0. Installed Packages                                       *" >> RTFM
+  echo "*                               1. Available Command List                                   *" >> RTFM
+  echo "*                               2. Available Command Reference                              *" >> RTFM
   echo "*                                                                                           *" >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "                                                                                             " >> RTFM
@@ -47,7 +53,7 @@
   echo "*********************************************************************************************" >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "*                                                                                           *" >> RTFM
-  echo "*                                    1. Command List                                        *" >> RTFM
+  echo "*                               1. Available Command List                                   *" >> RTFM
   echo "*                                                                                           *" >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "*********************************************************************************************" >> RTFM
@@ -62,7 +68,7 @@
   echo "*********************************************************************************************" >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "*                                                                                           *" >> RTFM
-  echo "*                               2. Command Information                                      *" >> RTFM
+  echo "*                              2. Command Information                                      *" >> RTFM
   echo "*                                                                                           *" >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "*********************************************************************************************" >> RTFM
@@ -71,7 +77,7 @@ while read p; do
   echo "                                                                                             " >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "                                                                                             " >> RTFM
-  echo "                        INFORMATION FOR THE $p COMMAND " >> RTFM
+  echo "                       3. $p COMMAND Reference" >> RTFM
   echo "                                                                                             " >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "                                                                                             " >> RTFM
