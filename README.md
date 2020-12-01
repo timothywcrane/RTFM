@@ -23,7 +23,7 @@ Dependencies:
 * enscript to create a ps file, the P (postscript) in PDF
 * ghostscript to take the ps file and create a PDF via it's ps2pdf command
 * alsa-utils for end-of-script audio notification via aplay.
-* opening pdf at end defaults to xpdf
+* RTFM option at end defaults to xpdf
  
  How To Run:
  
