@@ -10,7 +10,7 @@ Please Be Aware:
 * This script is NOT optimized in any way for performance. 
 * This script is meant to be a "hammer" on purpose.
 * It does what it says and has minimal requirements.
-* Debug output has been set by default to provide a poor man's progress bar. 
+* Debug output has been set up by default to provide a poor man's progress bar. 
 * No default fancy pdf formatting.
 * No default Unicode Support.
 * By default all intermediate output is deleted at the end of the script except for the final RTFM.pdf file
