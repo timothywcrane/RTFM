@@ -10,8 +10,8 @@
   echo "                                                                                             "
   echo "                                RTFM INSTRUCTIONS                                            "
   echo "                                                                                             "
-  echo "                   Create A Frigging `uname -o` Manual So                                    "
-  echo "                   $USER Can Read It!"
+  echo "                   Create A Frigging Custom`uname -o` Manual                                 "
+  echo "                   Specifically For $USER To Read!"
   sleep 5
   echo "                                                                                             "
   echo "                   Be Patient On Large Installations                                         "
