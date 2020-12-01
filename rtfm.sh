@@ -21,6 +21,7 @@
   sleep 1
   echo "                                                                                             "
   read -n 1 -r -s -p $'Press ENTER To Begin...\n'
+  touch RTFM
   set -x
   echo "                                                                                             " >> RTFM
   echo "*********************************************************************************************" >> RTFM
@@ -59,6 +60,7 @@
   echo "*********************************************************************************************" >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "                                                                                             " >> RTFM
+  touch packages
   apt list --installed > packages
   apt list --installed >> RTFM
   echo "                                                                                             " >> RTFM
@@ -70,6 +72,7 @@
   echo "*********************************************************************************************" >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "                                                                                             " >> RTFM
+  touch commands
   compgen -bcegksuv |sort|uniq > commands
   compgen -bcegksuv |sort|uniq >> RTFM
   echo "                                                                                             " >> RTFM
