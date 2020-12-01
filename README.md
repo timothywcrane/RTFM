@@ -5,6 +5,8 @@ RTFM is a simple Bash script that creates a friggin' system customized reference
 
 No more excuses.
 
+Please Be Aware:
+
 * This script is NOT optimized in any way for performance. 
 * This script is meant to be a "hammer" on purpose.
 * It does what it says and has minimal requirements.
