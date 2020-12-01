@@ -104,8 +104,8 @@ enscript -p rtf_manual.ps RTFM
 ps2pdf rtf_manual.ps RTFM.pdf
 # cleanup
 rm rtf_manual.ps
-#rm RTFM
-#rm rtfm_commands.txt
+rm RTFM
+rm commands
 set +x
 echo "Done. Now RTFM in your favorite ebook viewer."
 aplay ./endbell.wav
