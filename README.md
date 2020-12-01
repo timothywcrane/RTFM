@@ -20,7 +20,7 @@ Minimal Dependencies:
 
 * nix (tested so far exclusively on Debian Buster... but AFAIK it should work on just about anything with the other dependencies installed)
 * bash (may work in other shells but my #! announces bash)
-* cheat (adds cheat sheets to references) (comment out to disable cheat section)
+* cheat (adds cheat sheets to references) (comment out to disable cheat section) https://github.com/cheat/cheat
 * enscript to create a ps file, the P (postscript) in PDF
 * ghostscript to take the ps file and create a PDF via it's ps2pdf command
 * alsa-utils for end-of-script audio notification via aplay.
