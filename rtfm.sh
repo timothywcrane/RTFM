@@ -1,19 +1,19 @@
 #!/bin/bash
 # set -x and set +x flags provide a poor man's progress bar after logo display with 7 second delay...
   echo "                                                                                             "
-  echo "                                _____ _______ ______ __  __                                  "
-  echo "                               |  __ \__   __|  ____|  \/  |                                 "
-  echo "                               | |__) | | |  | |__  | \  / |                                 "
-  echo "                               |  _  /  | |  |  __| | |\/| |                                 "
-  echo "                               | | \ \  | |  | |    | |  | |                                 "
-  echo "                               |_|  \_\ |_|  |_|    |_|  |_|                                 "
+  echo "                             _____ _______ ______ __  __                                     "
+  echo "                            |  __ \__   __|  ____|  \/  |                                    "
+  echo "                            | |__) | | |  | |__  | \  / |                                    "
+  echo "                            |  _  /  | |  |  __| | |\/| |                                    "
+  echo "                            | | \ \  | |  | |    | |  | |                                    "
+  echo "                            |_|  \_\ |_|  |_|    |_|  |_|                                    "
   echo "                                                                                             "
   echo "                                                                                             "
-  echo "                  Be Patient During Manual Creation ... This May Take A While.               "
-  echo "                      Hit CTRL+c At Any Time To Force A Messy Exit                           "
-  echo "                   Debug enabled to provide a poor-man progress indicator                    "
+  echo "               Be Patient During Manual Creation ... This May Take A While.                  "
+  echo "                   Hit CTRL+c At Any Time To Force A Messy Exit                              "
+  echo "                Debug enabled to provide a poor-man progress indicator                       "
   sleep 5
-  echo "                                       Wait For It...                                        "
+  echo "                                   Wait For It...                                            "
   sleep 2
   set -x
   echo "*********************************************************************************************" >> RTFM
