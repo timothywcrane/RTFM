@@ -18,8 +18,18 @@ Please Be Aware:
 
 Minimal Dependencies:
 
- * nix (tested so far exclusively on Debian Buster... but AFAIK it should work on just about anything with the other dependencies installed)
- * bash - (may work in other shells but my #! announces bash)
- * enscript - to created a ps file, the P (postscript) in PDF
- * ghostscript - To take the ps file and create a PDF via it's ps2pdf command
- * alsa-utils for end-of-script audio notification via aplay.
+* nix (tested so far exclusively on Debian Buster... but AFAIK it should work on just about anything with the other dependencies installed)
+* bash - (may work in other shells but my #! announces bash)
+* enscript - to created a ps file, the P (postscript) in PDF
+* ghostscript - To take the ps file and create a PDF via it's ps2pdf command
+* alsa-utils for end-of-script audio notification via aplay.
+ 
+ How To Run:
+ 
+* Download Zip
+* Unzip
+* Navigate to the NTFM-main directory using your terminal or emulator
+* chmod +x rtfm.sh
+* ./rtfm.sh
+* Follow on-screen queues
+ 
