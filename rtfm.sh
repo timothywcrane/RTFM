@@ -1,5 +1,5 @@
 #!/bin/bash
-# set -x and set +x flags provide a poor man's progress bar after logo display with 7 second delay...
+# set -x and set +x flags provide a poor man's progress bar after showing logo display...
   echo "                                                                                             "
   echo "                             _____ _______ ______ __  __                                     "
   echo "                            |  __ \__   __|  ____|  \/  |                                    "
