@@ -17,13 +17,18 @@ Please Be Aware:
 
 Dependencies:
 
-* nix (tested so far exclusively on Debian Buster... but AFAIK it should work on just about anything with the other dependencies installed)
-* bash (may work in other shells but my #! announces bash)
-* cheat (optional cheat references) (comment out to disable) https://github.com/cheat/cheat
+  Hard
+  
+* nix (AFAIK it should work on just about anything)
+* bash (#! /bin/bash)
 * enscript to create a ps file, the P (postscript) in PDF
 * ghostscript to take the ps file and create a PDF via it's ps2pdf command
-* alsa-utils for end-of-script audio notification via aplay.
-* RTFM option at end defaults to xpdf
+
+  Soft
+  
+* cheat https://github.com/cheat/cheat (optional cheat references) (comment out to disable)
+* alsa-utils (optional audio notification via aplay) (comment out to disable) 
+* RTFM with xpdf (comment out to disable) 
  
  How To Run:
  
