@@ -13,8 +13,8 @@ Please Be Aware:
 * The debug flag has been used by default to provide a poor man's progress bar. 
 * No fancy pdf formatting.
 * No Unicode Support.
-* By default all intermediate output is deleted except final RTFM.pdf 
-         (you can easily uncomment file removal lines)
+* By default all intermediate output is deleted except final RTFM.pdf
+* You can easily rearrange or un/comment file to modify for ebook editing needs
 
 Minimal Dependencies:
 
