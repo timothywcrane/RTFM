@@ -18,7 +18,7 @@
   sleep 3
   echo "                   Don't Panic. Debug Is On To Show Progress.                                "
   sleep 2
-  echo "                   If You Do Panic: Hit CTRL+c For A Messy Exit                              "
+  echo "                   If You Do Panic: Hit CTRL+c To Exit                              "
   sleep 1
 read -n 1 -r -s -p $'Press ENTER To Begin...\n'
   set -x
