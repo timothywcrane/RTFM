@@ -96,22 +96,22 @@ while read p; do
   echo " ***** The $p COMMAND Reference *****                                                        " >> RTFM
   echo "                                                                                             " >> RTFM
   echo "*** WHAT IS $p ? ***                                                                         " >> RTFM
-  whatis "$p                                                                                         " >> RTFM 2>&1
+  whatis $p                                                                                            >> RTFM 2>&1
   echo "                                                                                             " >> RTFM
   echo "*** WHEREIS $p ? ***                                                                         " >> RTFM
-  whereis "$p                                                                                        " >> RTFM 2>&1
+  whereis $p                                                                                           >> RTFM 2>&1
   echo "                                                                                             " >> RTFM
   echo "*** MAN PAGE FOR $p ***                                                                      " >> RTFM
-  man "$p                                                                                            " >> RTFM 2>&1
+  man $p                                                                                               >> RTFM 2>&1
   echo "                                                                                             " >> RTFM
   echo "*** CHEAT $p  ***                                                                            " >> RTFM
-  cheat "$p                                                                                          " >> RTFM 2>&1
+  cheat $p                                                                                             >> RTFM 2>&1
   echo "                                                                                             " >> RTFM
   echo "*** HELP via help $p ***                                                                     " >> RTFM
-  help "$p                                                                                           " >> RTFM 2>&1
+  help $p                                                                                              >> RTFM 2>&1
   echo "                                                                                             " >> RTFM
   echo "*** $p ALSO MATCHES ***                                                                      " >> RTFM
-  apropos -e "$p                                                                                     " >> RTFM 2>&1
+  apropos -e $p                                                                                      >> RTFM 2>&1
   echo "                                                                                             " >> RTFM
 done < commands
 enscript -p RTFM.ps RTFM
