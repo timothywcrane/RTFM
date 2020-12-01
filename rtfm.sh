@@ -1,5 +1,5 @@
 #!/bin/bash
-# set -x and set +x flags provide a poor man's progress bar after logo display with 7 second delay...
+# set -x and set +x flags provide a poor man's progress bar after logo display
   echo " "
   echo "                             _____ _______ ______ __  __  "
   echo "                            |  __ \__   __|  ____|  \/  | "
@@ -24,26 +24,23 @@
   touch RTFM
   sleep 1
   set -x
-  echo "  " >> RTFM
+  echo " " >> RTFM
   echo "*********************************************************************************************" >> RTFM
-  echo "                             _____ _______ ______ __  __   "
-  echo "                            |  __ \__   __|  ____|  \/  |  "
-  echo "                            | |__) | | |  | |__  | \  / |  "
-  echo "                            |  _  /  | |  |  __| | |\/| |  "
-  echo "                            | | \ \  | |  | |    | |  | |  "
-  echo "                            |_|  \_\ |_|  |_|    |_|  |_|  "
-  echo " "
+  echo "                             _____ _______ ______ __  __   " >> RTFM
+  echo "                            |  __ \__   __|  ____|  \/  |  " >> RTFM
+  echo "                            | |__) | | |  | |__  | \  / |  " >> RTFM
+  echo "                            |  _  /  | |  |  __| | |\/| |  " >> RTFM
+  echo "                            | | \ \  | |  | |    | |  | |  " >> RTFM
+  echo "                            |_|  \_\ |_|  |_|    |_|  |_|  " >> RTFM
+  echo " " >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "`uname -o` Manual for $USER on `hostname -f`:                            " >> RTFM
-  echo "                                                                                             " >> RTFM
+  echo " " >> RTFM
   hostnamectl >> RTFM 2>&1
-  echo "                                                                                             " >> RTFM
+  echo " " >> RTFM
   echo " `apt list --installed | wc -l` packages currently installed                                 " >> RTFM 2>/dev/null       
-  echo "                                                                                             " >> RTFM
+  echo " " >> RTFM
   echo "*********************************************************************************************" >> RTFM
-  echo "                                                                                             " >> RTFM
-  echo "                                                                                             " >> RTFM
-  echo "*************************" >> RTFM
   echo " " >> RTFM
   echo "         CONTENTS " >> RTFM
   echo "           *** " >> RTFM
@@ -51,14 +48,14 @@
   echo "  2. Available Commands " >> RTFM
   echo "  3. Command References " >> RTFM
   echo " " >> RTFM
-  echo "************************" >> RTFM
+  echo "**************************" >> RTFM
   echo " " >> RTFM
   echo " " >> RTFM
-  echo "************************" >> RTFM
+  echo "**************************" >> RTFM
   echo " " >> RTFM
   echo " 1. Installed Packages " >> RTFM
   echo " " >> RTFM
-  echo "***********************" >> RTFM
+  echo "*************************" >> RTFM
   echo " " >> RTFM
   echo " " >> RTFM
   touch packages
