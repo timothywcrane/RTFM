@@ -1,7 +1,7 @@
 # RTFM
  ![RTFM](https://github.com/timothywcrane/RTFM/blob/main/rtfm.png?raw=true)
     
-RTFM is a simple Bash script that creates a friggin' system manual customized just for you so you can read, search & reference it!
+RTFM is a simple Bash script that creates a friggin' system manual customized just for you to can read, search & reference.
 No more excuses.
 
 * This script is NOT optimized in any way for performance. 
@@ -14,13 +14,8 @@ No more excuses.
 
 Minimal Dependencies:
 
- *nix (tested so far exclusively on Debian Buster... but AFAIK it should work on just about anything with the other dependencies installed)
-
- bash - (may work in other shells but my #! announces bash)
-
- enscript - to created a ps file, the P (postscript) in PDF
-
- ghostscript - To take the ps file and create a PDF via it's ps2pdf command
-
- You will need alsa-utils and an audio file to enable "done" notification with aplay.
- 
+ * nix (tested so far exclusively on Debian Buster... but AFAIK it should work on just about anything with the other dependencies installed)
+ * bash - (may work in other shells but my #! announces bash)
+ * enscript - to created a ps file, the P (postscript) in PDF
+ * ghostscript - To take the ps file and create a PDF via it's ps2pdf command
+ * alsa-utils and an audio file for "done" notification.
