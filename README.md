@@ -1,11 +1,11 @@
 # RTFM
  ![RTFM](https://github.com/timothywcrane/RTFM/blob/main/rtfm.png?raw=true)
     
-RTFM is a simple Bash script that creates a frigging custom system manual for you to read, search & reference.
+# RTFM is a simple Bash script that creates a frigging custom system manual for you to read, search & reference.
 
-No more excuses. Make one and use it.
+# No more excuses. Make one and use it.
 
-Please Be Aware:
+# Please Be Aware:
 
 * This script is NOT optimized in any way for performance. 
 * This script is meant to be a "hammer" on purpose.
@@ -15,22 +15,22 @@ Please Be Aware:
 * By default all intermediate output is deleted at the end of the script except for the final RTFM.pdf file
 * You can easily modify the code for custom ebook creation & editing needs
 
-Dependencies:
+# Dependencies:
 
-*-Hard
+Hard
   
 * nix (AFAIK it should work on just about anything)
 * bash (#! /bin/bash)
 * enscript to create a ps file, the P (postscript) in PDF
 * ghostscript to take the ps file and create a PDF via it's ps2pdf command
 
-*-Soft
+Soft
   
 * cheat https://github.com/cheat/cheat (optional cheat references) (comment out to disable)
 * alsa-utils (optional audio notification via aplay) (comment out to disable) 
 * RTFM with xpdf (comment out to disable) 
  
-How To Run:
+# How To Run:
  
 * Download
 * Unzip
