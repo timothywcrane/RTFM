@@ -12,14 +12,14 @@
   echo "                                                                                             "
   echo "                   Create A Frigging `uname -o` Manual So                                    "
   echo "                   $USER Can Read It!"
-  sleep 4
+  sleep 5
   echo "                                                                                             "
   echo "                   Be Patient On Large Installations                                         "
-  sleep 1
+  sleep 3
   echo "                   Don't Panic. Debug Is On To Show Progress.                                "
   sleep 2
   echo "                   If You Do Panic: Hit CTRL+c For A Messy Exit                              "
-  sleep 2
+  sleep 1
 read -n 1 -r -s -p $'Press ENTER To Begin...\n'
   set -x
   echo "                                                                                             " >> RTFM
