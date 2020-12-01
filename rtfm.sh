@@ -108,6 +108,7 @@ rm commands
 rm RTFM
 rm RTFM.ps
 set +x
-echo "$USER , you can now RTFM in your favorite ebook viewer."
 aplay ./endbell.wav
+echo "$USER , you can now RTFM in your favorite ebook viewer."
 read -n 1 -r -s -p $'Just Press ENTER...\n'
+xpdf RTFM.pdf
