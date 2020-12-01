@@ -17,20 +17,20 @@ Please Be Aware:
 
 Dependencies:
 
-  Hard
+Hard
   
 * nix (AFAIK it should work on just about anything)
 * bash (#! /bin/bash)
 * enscript to create a ps file, the P (postscript) in PDF
 * ghostscript to take the ps file and create a PDF via it's ps2pdf command
 
-  Soft
+Soft
   
 * cheat https://github.com/cheat/cheat (optional cheat references) (comment out to disable)
 * alsa-utils (optional audio notification via aplay) (comment out to disable) 
 * RTFM with xpdf (comment out to disable) 
  
- How To Run:
+How To Run:
  
 * Download
 * Unzip
