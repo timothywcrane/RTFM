@@ -104,6 +104,8 @@ while read p; do
   echo "                                                                                             " >> RTFM
   echo "*** MAN PAGE FOR $p ***                                                                      " >> RTFM
   man $p >> RTFM 2>&1
+  echo "*** CHEAT $p  ***                                                                      " >> RTFM
+  cheat "$p" >> RTFM 2>&1
   echo "                                                                                             " >> RTFM
   echo "*** HELP via help $p ***                                                                     " >> RTFM
   help $p >> RTFM 2>&1
