@@ -10,6 +10,7 @@ No more excuses.
 * The debug flag has been used by default to provide a poor man's progress bar. 
 * No fancy pdf formatting.
 * No Unicode Support.
+* By default all intermediate output is deleted except final RTFM.pdf
 
 Minimal Dependencies:
 
@@ -21,19 +22,5 @@ Minimal Dependencies:
 
  ghostscript - To take the ps file and create a PDF via it's ps2pdf command
 
- You will need alsa-utils and an audio file to enable the script's end notification with aplay.
-
-Options:
- Output:
- 1 text file named commands that lists all of the commands found by the script on your system
-
- 1 text file named RTFM that additionally contains reference information on your commands.
- 
- 1 ps file of RTFM used to create your final pdf
- 
- 1 pdf file of RTFM named RTFM.pdf
- 
- By default all output is deleted except final pdf
- 
- Most needs can be accomplished by rearranging the code blocks and using commenting schemes
+ You will need alsa-utils and an audio file to enable "done" notification with aplay.
  
