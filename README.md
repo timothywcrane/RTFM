@@ -3,7 +3,7 @@
     
 # RTFM is a simple Bash script that creates a frigging custom system manual for you to read, search & reference.
 
-## No more excuses. Make one and use it.
+## No more excuses. Make a manual and use it!
 
 ### Please Be Aware:
 
