@@ -101,7 +101,7 @@ while read p; do
   help $p >> RTFM 2>&1
   echo " " >> RTFM
   echo "* HELP via $p -- help " >> RTFM
-  $p --help >> RTFM 2>&1
+  echo `$p --help` >> RTFM 2>&1
   echo " " >> RTFM
   echo "** $p ALSO MATCHES " >> RTFM
   apropos -e $p >> RTFM 2>&1
