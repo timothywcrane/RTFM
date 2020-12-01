@@ -1,7 +1,7 @@
 # RTFM
  ![RTFM](https://github.com/timothywcrane/RTFM/blob/main/rtfm.png?raw=true)
     
-RTFM is a simple Bash script that creates a friggin' system manual customized just for you to can read, search & reference.
+RTFM is a simple Bash script that creates a friggin' system customized reference manual for you to read, search & reference.
 No more excuses.
 
 * This script is NOT optimized in any way for performance. 
