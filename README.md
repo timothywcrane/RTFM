@@ -14,7 +14,7 @@ Please Be Aware:
 * No fancy pdf formatting.
 * No Unicode Support.
 * By default all intermediate output is deleted except final RTFM.pdf
-* You can easily rearrange or un/comment file to modify for ebook editing needs
+* You can easily modify code for custom ebook creation & editing needs
 
 Minimal Dependencies:
 
