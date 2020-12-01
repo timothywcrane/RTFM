@@ -12,10 +12,8 @@
   echo "                                                                                             "
   echo "                   Create A Frigging Custom `uname -o` Manual                                "
   echo "                   Specifically For $USER To Read!"
-  sleep 1
   echo "                                                                                             "
   echo "                   Be Patient On Large Installations                                         "
-  sleep 1
   echo "                                                                                             "
   echo "                   Don't Panic. Debug Is On To Show Progress.                                "
   sleep 1
@@ -107,10 +105,10 @@ while read p; do
   echo "                                                                                             " >> RTFM
   echo "                                                                                             " >> RTFM
 done < commands
-enscript -p manual.ps RTFM
-ps2pdf manual.ps RTFM.pdf
-# cleanup
-rm manual.ps
+enscript -p RTFM.ps RTFM
+ps2pdf RTFM.ps RTFM.pdf
+# optional cleanup
+rm RTFM.ps
 rm RTFM
 rm commands
 set +x
