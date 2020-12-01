@@ -29,6 +29,6 @@ Minimal Dependencies:
 * Download
 * Unzip
 * Enter directory containing rtfm.sh using your terminal or emulator
-* sudo (or as root) chmod +x rtfm.sh
+* chmod +x rtfm.sh or make executable in file manager
 * ./rtfm.sh
 * Follow on-screen queues
