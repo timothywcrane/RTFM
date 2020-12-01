@@ -28,7 +28,7 @@
   
 * cheat https://github.com/cheat/cheat (optional cheat references) (comment out to disable)
 * alsa-utils (optional audio notification via aplay) (comment out to disable) 
-* RTFM with xpdf (comment out to disable) 
+* xpdf (to RTFM.pdf) (comment out to disable) 
  
 ### How To Run:
  
