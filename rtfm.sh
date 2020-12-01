@@ -12,13 +12,13 @@
   echo "                                                                                             "
   echo "                   Create A Frigging Custom `uname -o` Manual                                "
   echo "                   Specifically For $USER To Read!"
-  sleep 5
+  sleep 1
   echo "                                                                                             "
   echo "                   Be Patient On Large Installations                                         "
-  sleep 3
+  sleep 1
   echo "                                                                                             "
   echo "                   Don't Panic. Debug Is On To Show Progress.                                "
-  sleep 2
+  sleep 1
   echo "                   If You Do Panic: Hit CTRL+c To Exit                                       "
   sleep 1
   echo "                                                                                             "
