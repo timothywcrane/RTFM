@@ -35,8 +35,7 @@ read -n 1 -r -s -p $'Press ENTER To Begin...\n'
   echo "                                                                                             " >> RTFM
   hostnamectl >> RTFM 2>&1
   echo "                                                                                             " >> RTFM
-  echo " with `apt list --installed | wc -l` packages currently installed                            " >> RTFM 2>/dev/null
-  echo " as of $(date)                                                                               " >> RTFM
+  echo " `apt list --installed | wc -l` packages currently installed                            " >> RTFM 2>/dev/null       
   echo "                                                                                             " >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "                                                                                             " >> RTFM
