@@ -105,10 +105,10 @@ while read p; do
   echo "                                                                                             " >> RTFM
   echo "                                                                                             " >> RTFM
 done < commands
-enscript -p rtf_manual.ps RTFM
-ps2pdf rtf_manual.ps RTFM.pdf
+enscript -p manual.ps RTFM
+ps2pdf manual.ps RTFM.pdf
 # cleanup
-rm rtf_manual.ps
+rm manual.ps
 rm RTFM
 rm commands
 set +x
