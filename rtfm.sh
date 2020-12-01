@@ -8,7 +8,6 @@
   echo "                            | | \ \  | |  | |    | |  | |                                    "
   echo "                            |_|  \_\ |_|  |_|    |_|  |_|                                    "
   echo "                                                                                             "
-  echo "                                                                                             "
   echo "               Be Patient During Manual Creation ... This May Take A While.                  "
   echo "                   Hit CTRL+c At Any Time To Force A Messy Exit                              "
   echo "                Debug enabled to provide a poor-man progress indicator                       "
