@@ -26,8 +26,14 @@ Minimal Dependencies:
 Options:
  Output:
  1 text file named commands that lists all of the commands found by the script on your system
+
  1 text file named RTFM that additionally contains reference information on your commands.
+ 
  1 ps file of RTFM used to create your final pdf
+ 
  1 pdf file of RTFM named RTFM.pdf
- By default all output is deleted except final pdf. 
- To Edit Text or Workflow simply rearrange the code blocks or variate with simple comment/removal
+ 
+ By default all output is deleted except final pdf
+ 
+ Most needs can be accomplished by rearranging the code blocks and using commenting schemes
+ 
