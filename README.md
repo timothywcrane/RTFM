@@ -21,4 +21,4 @@ Minimal Dependencies:
  * bash - (may work in other shells but my #! announces bash)
  * enscript - to created a ps file, the P (postscript) in PDF
  * ghostscript - To take the ps file and create a PDF via it's ps2pdf command
- * alsa-utils and an audio file for "done" notification.
+ * alsa-utils for audio notification via aplay.
