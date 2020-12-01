@@ -38,18 +38,18 @@ read -n 1 -r -s -p $'Press ENTER To Begin...\n'
   echo "                                                                                             " >> RTFM
   hostnamectl >> RTFM 2>&1
   echo "                                                                                             " >> RTFM
-  echo " `apt list --installed | wc -l` packages currently installed                            " >> RTFM 2>/dev/null       
+  echo " `apt list --installed | wc -l` packages currently installed                                 " >> RTFM 2>/dev/null       
   echo "                                                                                             " >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "                                                                                             " >> RTFM
   echo "                                                                                             " >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "*                                                                                           *" >> RTFM
-  echo "*                                   CONTENTS                                                *" >> RTFM
-  echo "*                                   ********                                                *" >> RTFM
-# echo "*                               0. Installed Packages                                       *" >> RTFM
-  echo "*                               1. Available Command List                                   *" >> RTFM
-  echo "*                               2. Available Command Reference                              *" >> RTFM
+  echo "*   CONTENTS                                                                                *" >> RTFM
+  echo "*   ********                                                                                *" >> RTFM
+# echo "* 0. Installed Packages                                                                     *" >> RTFM
+  echo "* 1. Available Command List                                                                 *" >> RTFM
+  echo "* 2. Available Command Reference                                                            *" >> RTFM
   echo "*                                                                                           *" >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "                                                                                             " >> RTFM
@@ -57,7 +57,7 @@ read -n 1 -r -s -p $'Press ENTER To Begin...\n'
   echo "*********************************************************************************************" >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "*                                                                                           *" >> RTFM
-  echo "*                               1. Available Command List                                   *" >> RTFM
+  echo "* 1. Available Command List                                                                 *" >> RTFM
   echo "*                                                                                           *" >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "*********************************************************************************************" >> RTFM
@@ -72,7 +72,7 @@ read -n 1 -r -s -p $'Press ENTER To Begin...\n'
   echo "*********************************************************************************************" >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "*                                                                                           *" >> RTFM
-  echo "*                              2. Command Information                                      *" >> RTFM
+  echo "* 2. Command Reference Information                                                          *" >> RTFM
   echo "*                                                                                           *" >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "*********************************************************************************************" >> RTFM
@@ -81,7 +81,7 @@ while read p; do
   echo "                                                                                             " >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "                                                                                             " >> RTFM
-  echo "                       3. $p COMMAND Reference" >> RTFM
+  echo "  3. The $p COMMAND Reference                                                                " >> RTFM
   echo "                                                                                             " >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "                                                                                             " >> RTFM
