@@ -131,7 +131,7 @@ echo "                            |  _  /  | |  |  __| | |\/| |                 
 echo "                            | | \ \  | |  | |    | |  | |                                    "
 echo "                            |_|  \_\ |_|  |_|    |_|  |_|                                    "
 echo "                                                                                             "
-echo "                                  RTFM IS FINISHED                                           "
+echo "                                  RTFM HAS FINISHED                                          "
 echo "                                                                                             "
 echo "$USER , you can now RTFM in xpdf                                                             "
 read -n 1 -r -s -p $'Just Press ENTER...Or CTRL+c To Exit\n'
