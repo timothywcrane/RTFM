@@ -119,6 +119,14 @@ rm RTFM
 rm RTFM.ps
 set +x
 aplay ./endbell.wav
-echo "$USER , you can now RTFM in your favorite ebook viewer."
+echo "                                                                                             "
+echo "                             _____ _______ ______ __  __                                     "
+echo "                            |  __ \__   __|  ____|  \/  |                                    "
+echo "                            | |__) | | |  | |__  | \  / |                                    "
+echo "                            |  _  /  | |  |  __| | |\/| |                                    "
+echo "                            | | \ \  | |  | |    | |  | |                                    "
+echo "                            |_|  \_\ |_|  |_|    |_|  |_|                                    "
+echo "                                                                                             "
+echo "$USER , you can now RTFM in xpdf"
 read -n 1 -r -s -p $'Just Press ENTER...\n'
 xpdf RTFM.pdf
