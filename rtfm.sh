@@ -1,33 +1,31 @@
 #!/bin/bash
 # set -x and set +x flags provide a poor man's progress bar after logo display with 7 second delay...
-  echo "                              "
-  echo "  _____ _______ ______ __  __ "
-  echo " |  __ \__   __|  ____|  \/  |"
-  echo " | |__) | | |  | |__  | \  / |"
-  echo " |  _  /  | |  |  __| | |\/| |"
-  echo " | | \ \  | |  | |    | |  | |"
-  echo " |_|  \_\ |_|  |_|    |_|  |_|"
-  echo "                              "
-  echo "                              "
-  echo " Be Patient During Manual Creation ... This May Take A While. "
-  echo " Hit CTRL+c At Any Time To Force A Messy Exit"
-  echo " Debug enabled to provide a poor-man progress indicator"
+  echo "                                                                                             "
+  echo "                                _____ _______ ______ __  __                                  "
+  echo "                               |  __ \__   __|  ____|  \/  |                                 "
+  echo "                               | |__) | | |  | |__  | \  / |                                 "
+  echo "                               |  _  /  | |  |  __| | |\/| |                                 "
+  echo "                               | | \ \  | |  | |    | |  | |                                 "
+  echo "                               |_|  \_\ |_|  |_|    |_|  |_|                                 "
+  echo "                                                                                             "
+  echo "                                                                                             "
+  echo "                  Be Patient During Manual Creation ... This May Take A While.               "
+  echo "                      Hit CTRL+c At Any Time To Force A Messy Exit                           "
+  echo "                   Debug enabled to provide a poor-man progress indicator                    "
   sleep 5
-  echo " Wait For It..."
+  echo "                                       Wait For It...                                        "
   sleep 2
   set -x
   echo "*********************************************************************************************" >> RTFM
-  echo "                                                                                             " >> RTFM
-  echo "  _____ _______ ______ __  __                                                                " >> RTFM
-  echo " |  __ \__   __|  ____|  \/  |                                                               " >> RTFM
-  echo " | |__) | | |  | |__  | \  / |                                                               " >> RTFM
-  echo " |  _  /  | |  |  __| | |\/| |                                                               " >> RTFM
-  echo " | | \ \  | |  | |    | |  | |                                                               " >> RTFM
-  echo " |_|  \_\ |_|  |_|    |_|  |_|                                                               " >> RTFM
-  echo "                                                                                             " >> RTFM
-  echo "                                                                                             " >> RTFM
+  echo "                                _____ _______ ______ __  __                                  "
+  echo "                               |  __ \__   __|  ____|  \/  |                                 "
+  echo "                               | |__) | | |  | |__  | \  / |                                 "
+  echo "                               |  _  /  | |  |  __| | |\/| |                                 "
+  echo "                               | | \ \  | |  | |    | |  | |                                 "
+  echo "                               |_|  \_\ |_|  |_|    |_|  |_|                                 "
+  echo "                                                                                             "
   echo "*********************************************************************************************" >> RTFM
-  echo "Command Manual for $USER referencing:                                                        " >> RTFM
+  echo "Command Manual for $USER referencing:                            " >> RTFM
   echo "                                                                                             " >> RTFM
   hostnamectl >> RTFM 2>&1
   echo "                                                                                             " >> RTFM
