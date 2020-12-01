@@ -100,9 +100,9 @@ while read p; do
   echo "* HELP via help $p " >> RTFM
   help $p >> RTFM 2>&1
   echo " " >> RTFM
-  echo "* HELP via $p -- help " >> RTFM
-  echo `$p --help` >> RTFM 2>&1
-  echo " " >> RTFM
+# causes problems  " HELP via $p -- help " >> RTFM
+# $p --help` >> RTFM 2>&1
+# echo " " >> RTFM
   echo "** $p ALSO MATCHES " >> RTFM
   apropos -e $p >> RTFM 2>&1
   echo " " >> RTFM
