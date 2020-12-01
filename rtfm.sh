@@ -16,10 +16,12 @@
   echo "                                                                                             "
   echo "                   Be Patient On Large Installations                                         "
   sleep 3
+  echo "                                                                                             "
   echo "                   Don't Panic. Debug Is On To Show Progress.                                "
   sleep 2
-  echo "                   If You Do Panic: Hit CTRL+c To Exit                              "
+  echo "                   If You Do Panic: Hit CTRL+c To Exit                                       "
   sleep 1
+  echo "                                                                                             "
 read -n 1 -r -s -p $'Press ENTER To Begin...\n'
   set -x
   echo "                                                                                             " >> RTFM
