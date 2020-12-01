@@ -26,10 +26,9 @@ Minimal Dependencies:
  
  How To Run:
  
-* Download Zip
+* Download
 * Unzip
-* Navigate to the NTFM-main directory using your terminal or emulator
+* Navigate to the directory containing rtfm.sh using your terminal or emulator
 * chmod +x rtfm.sh
 * ./rtfm.sh
 * Follow on-screen queues
- 
