@@ -9,15 +9,17 @@
   echo "                            |_|  \_\ |_|  |_|    |_|  |_|                                    "
   echo "                                                                                             "
   echo "                                RTFM INSTRUCTIONS                                            "
-  echo "                   Create A Frigging `uname -o` Manual So                                       "
+  echo "                   Create A Frigging `uname -o` Manual So                                    "
   echo "                   $USER Can Read It!"
   echo "                                                                                             "
-  echo "                   Be Patient On Large Installations                                            "
-  echo "                   Don\'t Panic : Progress Shown As Debug Scrolling                                            "
-  sleep 4
-  echo "                   Panic Keys: CTRL+c For A Messy Exit                "
+  echo "                   Be Patient On Large Installations                                         "
+  echo "                   Don't Panic. Progress Shown By Debug.                                     "
+  echo "                                                                                             "
+  sleep 6
+  echo "                   If You Do Panic: Hit CTRL+c For A Messy Exit                              "
+  echo "                                                                                             "
   sleep 3
-read -n 1 -r -s -p $'Press ENTER...\n'
+read -n 1 -r -s -p $'Press ENTER To Begin...\n'
   set -x
   echo "                                                                                             " >> RTFM
   echo "*********************************************************************************************" >> RTFM
@@ -110,5 +112,5 @@ rm rtf_manual.ps
 rm RTFM
 rm commands
 set +x
-echo "Done. Now RTFM in your favorite ebook viewer."
+echo "$USER , you can now RTFM in your favorite ebook viewer."
 aplay ./endbell.wav
