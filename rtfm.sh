@@ -20,7 +20,7 @@
   echo "                   If You Do Panic: Hit CTRL+c To Exit                                       "
   sleep 1
   echo "                                                                                             "
-read -n 1 -r -s -p $'Press ENTER To Begin...\n'
+  read -n 1 -r -s -p $'Press ENTER To Begin...\n'
   set -x
   echo "                                                                                             " >> RTFM
   echo "*********************************************************************************************" >> RTFM
@@ -45,17 +45,28 @@ read -n 1 -r -s -p $'Press ENTER To Begin...\n'
   echo "*                                                                                           *" >> RTFM
   echo "*   CONTENTS                                                                                *" >> RTFM
   echo "*   ********                                                                                *" >> RTFM
-# echo "* 0. Installed Packages                                                                     *" >> RTFM
-  echo "* 1. Available Command List                                                                 *" >> RTFM
-  echo "* 2. Available Command Reference                                                            *" >> RTFM
+  echo "* 1. Installed Packages                                                                     *" >> RTFM
+  echo "* 2. Available Commands                                                                     *" >> RTFM
+  echo "* 3. Command References                                                                     *" >> RTFM
   echo "*                                                                                           *" >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "                                                                                             " >> RTFM
+  echo "*********************************************************************************************" >> RTFM
+  echo "*********************************************************************************************" >> RTFM
+  echo "*                                                                                           *" >> RTFM
+  echo "* 1. Installed Packages                                                                     *" >> RTFM
+  echo "*                                                                                           *" >> RTFM
+  echo "*********************************************************************************************" >> RTFM
+  echo "*********************************************************************************************" >> RTFM
+  echo "                                                                                             " >> RTFM
+  echo "                                                                                             " >> RTFM
+  apt list --installed > packages
+  apt list --installed >> RTFM
   echo "                                                                                             " >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "*                                                                                           *" >> RTFM
-  echo "* 1. Available Command List                                                                 *" >> RTFM
+  echo "* 2. Available Commands                                                                     *" >> RTFM
   echo "*                                                                                           *" >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "*********************************************************************************************" >> RTFM
@@ -69,48 +80,39 @@ read -n 1 -r -s -p $'Press ENTER To Begin...\n'
   echo "                                                                                             " >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "*********************************************************************************************" >> RTFM
-  echo "*                                                                                           *" >> RTFM
-  echo "* 2. Command Reference Information                                                          *" >> RTFM
-  echo "*                                                                                           *" >> RTFM
+  echo "* 3. Command References                                                                     *" >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo "*********************************************************************************************" >> RTFM
   echo " "
 while read p; do
   echo "                                                                                             " >> RTFM
   echo "*********************************************************************************************" >> RTFM
-  echo "                                                                                             " >> RTFM
-  echo "  3. The $p COMMAND Reference                                                                " >> RTFM
-  echo "                                                                                             " >> RTFM
+  echo " ***** The $p COMMAND Reference *****                                                        " >> RTFM
   echo "*********************************************************************************************" >> RTFM
-  echo "                                                                                             " >> RTFM
   echo "                                                                                             " >> RTFM
   echo "*** WHAT IS $p ? ***                                                                         " >> RTFM
   whatis $p >> RTFM 2>&1
   echo "                                                                                             " >> RTFM
-  echo "                                                                                             " >> RTFM
   echo "*** WHEREIS $p ? ***                                                                         " >> RTFM
   whereis "$p" >> RTFM 2>&1
-  echo "                                                                                             " >> RTFM
   echo "                                                                                             " >> RTFM
   echo "*** MAN PAGE FOR $p ***                                                                      " >> RTFM
   man $p >> RTFM 2>&1
   echo "                                                                                             " >> RTFM
-  echo "                                                                                             " >> RTFM
   echo "*** HELP via help $p ***                                                                     " >> RTFM
   help $p >> RTFM 2>&1
   echo "                                                                                             " >> RTFM
-  echo "                                                                                             " >> RTFM
-  echo "* $p ALSO MATCHES *                                                                          " >> RTFM
+  echo "*** $p ALSO MATCHES ***                                                                      " >> RTFM
   apropos -e "$p" >> RTFM 2>&1
-  echo "                                                                                             " >> RTFM
   echo "                                                                                             " >> RTFM
 done < commands
 enscript -p RTFM.ps RTFM
 ps2pdf RTFM.ps RTFM.pdf
 # optional cleanup
-rm RTFM.ps
-rm RTFM
+rm packages
 rm commands
+rm RTFM
+rm RTFM.ps
 set +x
 echo "$USER , you can now RTFM in your favorite ebook viewer."
 aplay ./endbell.wav
