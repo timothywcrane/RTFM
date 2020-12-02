@@ -28,6 +28,9 @@
   
 * cheat https://github.com/cheat/cheat (optional references) (comment out to disable)
 * tldr https://github.com/tldr-pages/tldr (optional references) (comment out to disable)
+* bro pages https://github.com/hubsmoke/bro (optional reference) (comment out to disable)
+    * install rubyx.x-dev
+    * then sudo gem install bropages
 * alsa-utils (optional audio notification via aplay) (comment out to disable) 
 * xpdf (to RTFM.pdf) (comment out to disable) 
  
