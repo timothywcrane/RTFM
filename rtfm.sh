@@ -95,6 +95,8 @@ while read p; do
   man $p >> RTFM 2>&1
   echo "** BroPages FOR $p " >> RTFM
   bro $p >> RTFM 2>&1
+  sleep 20
+# give ample delay after bro to be nice
   echo "** TLDR FOR $p " >> RTFM
   tldr $p >> RTFM 2>&1
   echo " " >> RTFM
