@@ -94,7 +94,7 @@ while read p; do
   echo "** MAN PAGE FOR $p " >> RTFM
   man $p >> RTFM 2>&1
   echo "** BroPages FOR $p " >> RTFM
-  bro $p >> RTFM
+  bro $p 2>/dev/null >> RTFM
   sleep 20
 # pass on errors and give ample delay after bro to be nice
   echo "** TLDR FOR $p " >> RTFM
