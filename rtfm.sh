@@ -93,6 +93,8 @@ while read p; do
   echo " " >> RTFM
   echo "** MAN PAGE FOR $p " >> RTFM
   man $p >> RTFM 2>&1
+  echo "** BroPages FOR $p " >> RTFM
+  bro $p >> RTFM 2>&1
   echo "** TLDR FOR $p " >> RTFM
   tldr $p >> RTFM 2>&1
   echo " " >> RTFM
