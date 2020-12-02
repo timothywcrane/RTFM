@@ -1,5 +1,5 @@
 #!/bin/bash
-# set -x and set +x flags provide a poor man's progress bar after logo display
+# set -x and set +x flags provide a poor man's progress bar after logo displays
   echo " "
   echo "                             _____ _______ ______ __  __  "
   echo "                            |  __ \__   __|  ____|  \/  | "
@@ -16,11 +16,13 @@
   echo "                   Be Patient On Large Installations "
   echo " "
   echo "                   Don't Panic. Debug Is On To Show Progress. "
-  sleep 1
+  echo " "
+  sleep 2
   echo "                   If You Do Panic: Hit CTRL+c To Exit "
   sleep 1
   echo " "
   read -n 1 -r -s -p $'Press ENTER To Begin...\n'
+aplay ./endbell.wav
   touch RTFM
   sleep 1
   set -x
@@ -120,15 +122,7 @@ while read p; do
   apropos -e $p >> RTFM 2>&1
   echo " " >> RTFM
 done < commands
-enscript -p RTFM.ps RTFM
-ps2pdf RTFM.ps RTFM.pdf
-# optional cleanup
-rm packages
-rm commands
-rm RTFM
-rm RTFM.ps
 set +x
-aplay ./endbell.wav
 echo "                                                          "
 echo "                             _____ _______ ______ __  __  "
 echo "                            |  __ \__   __|  ____|  \/  | "
@@ -137,10 +131,34 @@ echo "                            |  _  /  | |  |  __| | |\/| | "
 echo "                            | | \ \  | |  | |    | |  | | "
 echo "                            |_|  \_\ |_|  |_|    |_|  |_| "
 echo " "
-echo "                                  RTFM HAS FINISHED"
+echo "                                  RTFM TEXT FINISHED"
+echo " "
+  echo " You Might Want To Edit RTFM Before PDF Conversion"
+  read -n 1 -r -s -p $'Then Press ENTER To Convert - CTRL+c To Exit\n'
+aplay ./endbell.wav
+set -x
+sleep 1
+enscript -p RTFM.ps RTFM
+ps2pdf RTFM.ps RTFM.pdf
+# optional cleanup
+rm packages
+rm commands
+rm RTFM
+rm RTFM.ps
+set +x
+echo "                                                          "
+echo "                             _____ _______ ______ __  __  "
+echo "                            |  __ \__   __|  ____|  \/  | "
+echo "                            | |__) | | |  | |__  | \  / | "
+echo "                            |  _  /  | |  |  __| | |\/| | "
+echo "                            | | \ \  | |  | |    | |  | | "
+echo "                            |_|  \_\ |_|  |_|    |_|  |_| "
+echo " "
+echo "                                  RTFM PDF FINISHED"
 echo " "
 echo "Your RTFM Document(s) Have Been Created. "
 echo "$USER , you can now RTFM. "
 echo " "
 read -n 1 -r -s -p $'ENTER opens new RTFM.pdf in xpdf  CTRL+c Exits\n'
+aplay ./endbell.wav
 xpdf RTFM.pdf
