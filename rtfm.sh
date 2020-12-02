@@ -94,7 +94,7 @@ while read p; do
   echo "** MAN PAGE FOR $p " >> RTFM
   man $p >> RTFM 2>&1
   echo " " >> RTFM
-  echo "** BroPages FOR $p " >> RTFM
+  echo "** BRO-PAGES FOR $p " >> RTFM
   bro lookup $p >> RTFM 2>/dev/null
   sleep 10
   echo " " >> RTFM
