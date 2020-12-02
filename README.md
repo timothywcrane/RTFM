@@ -13,7 +13,7 @@
 * No fancy pdf formatting.
 * No Unicode Support.
 * By default all intermediate output is deleted at the end of the script except for the final RTFM.pdf file
-* Super simple script.. Fork Off!
+* Super simple script. Modify to your liking.
 
 ### Dependencies:
 
