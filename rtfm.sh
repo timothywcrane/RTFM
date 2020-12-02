@@ -1,4 +1,5 @@
 #!/bin/bash
+# Author/Copyright - Timothy W. Crane
 # set -x and set +x flags provide a poor man's progress bar after logo displays
 aplay ./endbell.wav
   echo " "
