@@ -10,10 +10,10 @@
 * This script is NOT optimized in any way for performance. 
 * This script is meant to be a "hammer" on purpose.
 * Debug output has been set up by default to provide a poor man's progress bar. 
-* No default fancy pdf formatting.
-* No default Unicode Support.
+* No fancy pdf formatting.
+* No Unicode Support.
 * By default all intermediate output is deleted at the end of the script except for the final RTFM.pdf file
-* You can easily modify the code for custom ebook creation & editing needs
+* Super simple script.. Fork Off!
 
 ### Dependencies:
 
