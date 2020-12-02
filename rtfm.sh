@@ -94,12 +94,16 @@ while read p; do
   echo "** MAN PAGE FOR $p " >> RTFM
   man $p >> RTFM 2>&1
   echo " " >> RTFM
-#  bro commented out as OOTB it's use is call heavy and wait heavy on large sytems notwithstanding the lack of a random wait-call generator... LOL Sorry bro. Use at your own risk.
-#  echo "** BRO-PAGES FOR $p " >> RTFM
-#  bro lookup $p >> RTFM 2>/dev/null
-#  sleep 5
-#  echo " " >> RTFM
-# pass on bro errors and give ample delay after bro to be thankful ;)
+#  bro commented out
+#  * OOTB it's use is request heavy You would die waiting  on large sytems,
+#  * notwithstanding the lack of a random wait-call generator...
+#  * Sorry bro. Use at your own risk.
+#  * echo "** BRO-PAGES FOR $p " >> RTFM
+#  * bro lookup $p >> RTFM 2>/dev/null
+#  * sleep 30
+#  * echo " " >> RTFM
+#  * send errors to nullwhere and give ample delay 
+#  * Rule Of Thumb: The more thankful you are to bro, the longer you set the sleep delay.
   echo "** TLDR FOR $p " >> RTFM
   tldr $p >> RTFM 2>&1
   echo " " >> RTFM
