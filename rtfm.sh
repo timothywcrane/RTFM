@@ -96,7 +96,7 @@ while read p; do
   echo " " >> RTFM
   echo "** BroPages FOR $p " >> RTFM
   bro lookup $p >> RTFM 2>/dev/null
-  sleep 20
+  sleep 10
   echo " " >> RTFM
 # pass on errors and give ample delay after bro to be nice
   echo "** TLDR FOR $p " >> RTFM
