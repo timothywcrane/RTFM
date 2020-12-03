@@ -12,7 +12,9 @@
 * Debug output has been set up by default to provide a poor man's progress bar. 
 * No fancy pdf formatting.
 * No Unicode Support.
-* By default all intermediate output is deleted at the end of the script except for the final RTFM.pdf file
+* packages, commands listed in text
+* RTFM in text, ps and pdf
+* Multiple Reference Resources
 * Super simple script. Modify to your liking.
 
 ### Dependencies:
@@ -32,7 +34,7 @@
     * install rubyx.x-dev
     * then sudo gem install bropages
 * alsa-utils (optional audio notification via aplay) (comment out to disable) 
-* xpdf (to RTFM.pdf) (comment out to disable) 
+* xpdf on a graphical desktop (to RTFM.pdf) (comment out to disable) 
  
 ### How To Run:
  
