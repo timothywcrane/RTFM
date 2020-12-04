@@ -4,8 +4,6 @@
 #                                                                                 #
 #---------------------------------------------------------------------------------#
 #                                                                                 #
-
-
           ############################################################
           # ******************************************************** #
           # *                                                      * #
@@ -21,8 +19,8 @@
           # *                  Script Information                  * #
           # *                  ******************                  * #
           # *                                                      * #
-          # * Name    : RTFM - Read The Frigging Manual            * #
-          # *                                                      * #
+          # * Name    : rtfm.sh - Read The Frigging Manual         * #
+          # *           Shell Script                               * #
           # *                                                      * #
           # * Description    : RTFM is a simple Bash script        * #
           # *     that creates a frigging custom system manual     * #
@@ -44,16 +42,12 @@
           # *                                                      * #
           # ******************************************************** #
           ############################################################
-
-
-
 #                                                                                 #
 #---------------------------------------------------------------------------------#
 #                                                                                 #
 
-
 #
-# Clear Screen And Display INSTRUCTIONS Panel                                    
+# Clear Screen And Display WELCOME                                    
 #                                     
 clear
 echo "                                                                            "
@@ -64,15 +58,12 @@ echo "                            |  _  /  | |  |  __| | |\/| |                 
 echo "                            | | \ \  | |  | |    | |  | |                   "
 echo "                            |_|  \_\ |_|  |_|    |_|  |_|                   "
 echo "                                                                            "    
-echo "                                    INSTRUCTIONS                            "
-echo "                                    ************                            "
+echo "                                     WELCOME                                "
+echo "                                     *******                                "
 sleep 1
 echo "                                                                            "    
 echo "               Create A Frigging Manual About Using `uname -o`              "
-echo "                                                                            "
 echo "               On System: `hostname -f`                                     "
-echo "                                                                            "
-sleep 2
 echo "               For: $USER To Read, Search And Reference                     "
 echo "                                                                            "
 sleep 2
@@ -82,11 +73,9 @@ sleep 1
 echo "               Do Not Panic!                                                "
 sleep 1
 echo "               Debug Set To Show Progress...                                "
-echo "                                                                            "
 sleep 4
 echo "               If You Do Panic: Hit CTRL+c To Exit                          "
 sleep 3
-echo "                                                                            "
 echo "                                                                            "
 echo "               Do You Have What It Takes To Run RTFM?                       "
 echo "                                                                            "
@@ -239,7 +228,7 @@ echo "                                                                          
 echo "                                                                           "
 read -n 1 -r -s -p $'               Hit ENTER To Continue - CTRL+c To Exit\n'
 echo "                                                                           "
-
+clear
 #
 # TODO - Add A Looping Death Metal Soundtrack Via aplay Concurrent With The Debug Stream
 #
@@ -272,7 +261,7 @@ echo "                                                                          
 #echo "                                                                          "
 #echo "               CTRL+c For An Impatient Exit                                   "
 #echo "                                                                          "#
-#
+#clear
 
 #
 # Start Sending Debug Information To Terminal Screen
@@ -552,16 +541,16 @@ echo "                 Texts Now Available: RTFM, packages & commands           
 echo "                                                                          "
 echo "                 Copy Them If You Need Them.                              "
 echo "                 Your Comment Settings May Delete                         "
-echo "                 Them After PDF Creation                                        "
+echo "                 Them After PDF Creation                                  "
 echo "                                                                          "
 echo "                 Saved RTFM edits will transfer to .ps file               "
 echo "                 and then pdf file creation                               "
 echo "                                                                          "
-echo "                                                                            "
+echo "                                                                          "
 read -n 1 -r -s -p $'             Hit ENTER To Create PDF\n'
 echo "             Hit CRTL+c To Exit                                           "
 echo "                                                                          "
-
+clear
 #
 # Start Sending Debug Information To Terminal Screen
 #
@@ -601,9 +590,11 @@ set -x
 #
 enscript -p RTFM.ps RTFM
 
+clear
 echo "               Your Postscript File Has Been Created                        "
 echo "               It Will Be There If You Commented Out It's Removal           "
-
+sleep 3
+clear
 #
 # Turn RTFM.ps File Into RTFM.pdf PDF File
 #
@@ -633,7 +624,7 @@ aplay ./endbell.wav 2>/dev/null
 #
 clear
 echo "                                                                          "
-echo "                            _____ _______ ______ __  __                   "
+echo "                             _____ _______ ______ __  __                   "
 echo "                            |  __ \__   __|  ____|  \/  |                 "
 echo "                            | |__) | | |  | |__  | \  / |                 "
 echo "                            |  _  /  | |  |  __| | |\/| |                 "
@@ -652,14 +643,14 @@ read -n 1 -r -s -p $'               Hit ENTER To RTFM in xpdf - CTRL+c To Exit\n
 #
 # Open RTFM.pdf in xpdf Viewer
 #
-xpdf RTFM.pdf
+xpdf RTFM.pdf &
     
 #
 # Clear And Goodbye
 #
 clear
 echo "                                                                          "
-echo "                            _____ _______ ______ __  __                   "
+echo "                             _____ _______ ______ __  __                   "
 echo "                            |  __ \__   __|  ____|  \/  |                 "
 echo "                            | |__) | | |  | |__  | \  / |                 "
 echo "                            |  _  /  | |  |  __| | |\/| |                 "
@@ -671,5 +662,5 @@ echo "                                   ************                           
 echo "                                                                          "
 echo "                                  Goodbye. Go RTFM.                       "
 echo "                                                                          "
-sleep 5  
+sleep 4  
 exit
