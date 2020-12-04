@@ -74,7 +74,7 @@ echo "               Do Not Panic!                                              
 sleep 1
 echo "               Debug Set To Show Progress...                                "
 sleep 4
-echo "               If You Do Panic: Hit CTRL+c To Exit                          "
+echo "               If You Do Panic Hit CTRL+c To Exit                          "
 sleep 3
 echo "                                                                            "
 echo "               Do You Have What It Takes To Run RTFM?                       "
