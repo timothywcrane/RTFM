@@ -47,7 +47,7 @@
 #                                                                                 #
 
 #
-# Clear Screen And Display RTFM INSTRUCTIONS                                    
+# Clear Screen And Display WELCOME                                    
 #                                     
 clear
 echo "                                                                            "
@@ -62,8 +62,8 @@ echo "                                  RTFM INSTRUCTIONS                       
 echo "                                  *****************                         "
 sleep 1
 echo "                                                                            "    
-echo "               Create A Frigging Manual About Using `uname -o`              "
-echo "               On System `hostname -f`                                      "
+echo "               Create A Frigging Manual On `uname -o`                       "
+echo "               Using `hostname -f`                                          "
 echo "               For $USER To Read, Search And Reference                      "
 echo "                                                                            "
 sleep 2
@@ -72,19 +72,21 @@ echo "                                                                          
 sleep 1
 echo "               Do Not Panic!                                                "
 sleep 1
-echo "               No Debug No Progress...                                      "
+echo "               Debug Set To Show Progress...                                "
 sleep 4
 echo "               If You Do Panic Hit CTRL+c To Exit                           "
 sleep 3
 echo "                                                                            "
 echo "               Do You Have What It Takes To Run RTFM?                       "
+echo "                                                                            "
 sleep 2
+
 
 #
 # Hitting ENTER Continues 'TEXT'
 #
 echo "                                                                            "
-read -n 1 -r -s -p $'               Hit ENTER To Check...\n'
+read -n 1 -r -s -p $'               Hit ANYKEY To Check...\n'
 echo "                                                                            "
 
 #
@@ -225,7 +227,7 @@ aplay ./endbell.wav 2>/dev/null
 #
 echo "                                                                           "
 echo "                                                                           "
-read -n 1 -r -s -p $'               Hit ENTER To Continue - CTRL+c To Exit\n'
+read -n 1 -r -s -p $'               Hit ANYKEY To Continue - CTRL+c To Exit\n'
 echo "                                                                           "
 
 
@@ -268,7 +270,7 @@ echo "                                                                          
 # Hitting ENTER Continues 'TEXT'
 #
 echo "                                                                            "
-read -n 1 -r -s -p $'               Hit ENTER To Begin...\n'
+read -n 1 -r -s -p $'               Hit ANYKEY To Begin...\n'
 echo "                                                                            "
 
 #
@@ -572,7 +574,7 @@ echo "                                                                          
 #
 # Hitting ENTER Continues 'TEXT'
 #
-read -n 1 -r -s -p $'                 Hit ENTER To Create PDF\n'
+read -n 1 -r -s -p $'                 Hit ANYKEY To Create PDF\n'
 echo "                 Hit CRTL+c To Exit                                           "
 echo "                                                                          "
 clear
@@ -649,7 +651,7 @@ echo "               RTFM Is Done.                                              
 echo "               A Brand New RTFM PDF for $USER. No More Excuses.           "
 echo "                                                                          "
 echo "                                                                          "
-read -n 1 -r -s -p $'               Hit ENTER To RTFM in xpdf - CTRL+c To Exit\n'
+read -n 1 -r -s -p $'               Hit ANYKEY To RTFM in xpdf - CTRL+c To Exit\n'
 
 #
 # Open RTFM.pdf in xpdf Viewer
