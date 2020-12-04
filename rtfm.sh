@@ -19,8 +19,8 @@
           # *                  Script Information                  * #
           # *                  ******************                  * #
           # *                                                      * #
-          # * Name    : rtfm.sh - Read The Frigging Manual         * #
-          # *           Shell Script                               * #
+          # * Name    : rtfm_ndb.sh - Read The Frigging Manual     * #
+          # *           Shell Script without debug set             * #
           # *                                                      * #
           # * Description    : RTFM is a simple Bash script        * #
           # *     that creates a frigging custom system manual     * #
@@ -47,7 +47,7 @@
 #                                                                                 #
 
 #
-# Clear Screen And Display WELCOME                                    
+# Clear Screen And Display RTFM INSTRUCTIONS                                    
 #                                     
 clear
 echo "                                                                            "
@@ -72,24 +72,23 @@ echo "                                                                          
 sleep 1
 echo "               Do Not Panic!                                                "
 sleep 1
-echo "               Debug Set To Show Progress...                                "
+echo "               No Debug No Progress...                                      "
 sleep 4
 echo "               If You Do Panic Hit CTRL+c To Exit                           "
 sleep 3
 echo "                                                                            "
 echo "               Do You Have What It Takes To Run RTFM?                       "
-echo "                                                                            "
 sleep 2
 
 #
-# Hitting ENTER Continues To Tests For Dependencies - Hit CTRL+c Exits
+# Hitting ENTER Continues 'TEXT'
 #
 echo "                                                                            "
-read -n 1 -r -s -p $'               Hit ENTER To Check - CTRL+c To Exit\n'
+read -n 1 -r -s -p $'               Hit ENTER To Check...\n'
 echo "                                                                            "
 
 #
-# Clear Screen And Display RTFM DEPENDENCIES Panel
+# Clear Screen And Display RTFM DEPENDENCIES
 #
 clear
 echo "                                                                            "
@@ -111,7 +110,7 @@ echo "                                                                          
 # Required
 #
 echo "                                                                            "
-echo "              REQUIRED                                                      "
+echo "          REQUIRED                                                          "
 echo "                                                                            "
 
 #
@@ -157,7 +156,7 @@ fi
 # Suggested
 #
 echo "                                                                            "
-echo "               SUGGESTED                                                    "
+echo "           SUGGESTED                                                        "
 echo "                                                                            "
 
 #
@@ -222,51 +221,68 @@ echo " "
 aplay ./endbell.wav 2>/dev/null
 
 #
-# ENTER - Unsatisfied Exit
+# Hitting ENTER Continues 'TEXT'
 #
 echo "                                                                           "
 echo "                                                                           "
 read -n 1 -r -s -p $'               Hit ENTER To Continue - CTRL+c To Exit\n'
 echo "                                                                           "
+
+
+#
+# Clear Screen And Display RTFM Texts Creation                                    
+#                                     
 clear
+echo "                                                                            "
+echo "                             _____ _______ ______ __  __                    "
+echo "                            |  __ \__   __|  ____|  \/  |                   "
+echo "                            | |__) | | |  | |__  | \  / |                   "
+echo "                            |  _  /  | |  |  __| | |\/| |                   "
+echo "                            | | \ \  | |  | |    | |  | |                   "
+echo "                            |_|  \_\ |_|  |_|    |_|  |_|                   "
+echo "                                                                            "    
+echo "                                  RTFM Texts Creation                       "
+echo "                                  *******************                       "
+sleep 1
+echo "                                                                            "    
+echo "               Seems Like You Feel `hostname -f` Is Ready To Go             "
+echo "                                                                            "
+echo "               The Next Step Is To Create A Text Document For:              "
+echo "                                                                            "
+sleep 1
+echo "               1. A List Of Packages Installed                              "
+sleep 1
+echo "               2. A List Of Available Commands                              "
+sleep 1
+echo "               3. A Text Manual That Combines The Above With References     "
+echo "                                                                            "
+sleep 3
+echo "               Do Not Panic!                                                "
+echo "               No Debug No Progress...                                      "
+sleep 4
+echo "               If You Do Panic Hit CTRL+c To Exit                           "
+sleep 2
+echo "                                                                            "
+
+#
+# Hitting ENTER Continues 'TEXT'
+#
+echo "                                                                            "
+read -n 1 -r -s -p $'               Hit ENTER To Begin...\n'
+echo "                                                                            "
+
 #
 # TODO - Add A Looping Death Metal Soundtrack Via aplay Concurrent With The Debug Stream
 #
 
-#
-# Clear Screen And Display NO DEBUG NO PROGRESS Panel
-#
-#
-
-#
-#clear
-#echo "                                                                          "
-#echo "                             _____ _______ ______ __  __                  "
-#echo "                            |  __ \__   __|  ____|  \/  |                 "
-#echo "                            | |__) | | |  | |__  | \  / |                 "
-#echo "                            |  _  /  | |  |  __| | |\/| |                 "
-#echo "                            | | \ \  | |  | |    | |  | |                 "
-#echo "                            |_|  \_\ |_|  |_|    |_|  |_|                 "
-#echo "                                                                          "
-#echo "                                No Debug No Progress                      "
-#echo "                                ********************                      "
-#echo "                                                                          "
-#echo "               Debug is off and I have not yet added a progress bar.      "
-#echo "               Always read code you download, especially on Github.       "
-#echo "                                                                          "
-#sleep 1
-#echo "               This may take a while depending on your install.           "
-#sleep 1
-#echo "               Patience is a virtue when RTFM.                            "
-#echo "                                                                          "
-#echo "               CTRL+c For An Impatient Exit                                   "
-#echo "                                                                          "#
-#clear
-
+clear 
 #
 # Start Sending Debug Information To Terminal Screen
 #    
+
+#
 set -x
+#
 
 #
 # Create RTFM file And Wait 1 Second Before Creating The Text Files
@@ -302,7 +318,8 @@ echo "                                                                          
 #
 hostnamectl >> RTFM 2>&1
 echo "                                                                                             " >> RTFM
-    
+
+
 #
 # Get Number Of Installed Packages And Add To Bottom Of RTFM File
 # 
@@ -345,7 +362,8 @@ echo "                          " >> RTFM
 # Create packages file
 #
 touch packages
-  
+
+
 #
 # Get And Insert Installed Packages Into packages And Bottom Of RTFM File
 #
@@ -516,16 +534,18 @@ echo "                                                                          
 # Stop Sending Debug Information To Terminal Screen And Pause
 #
 set +x
-sleep 1
+
 #
 # Play Notification Audio
 #
 aplay ./endbell.wav 2>/dev/null
 
+
 #
 # Clear Screen And Display RTFM TEXT CREATED Panel
 #
 clear
+#
 echo "                                                                          "
 echo "                             _____ _______ ______ __  __                  "
 echo "                            |  __ \__   __|  ____|  \/  |                 "
@@ -547,42 +567,22 @@ echo "                 Saved RTFM edits will transfer to .ps file               
 echo "                 and then pdf file creation                               "
 echo "                                                                          "
 echo "                                                                          "
+#
+
+#
+# Hitting ENTER Continues 'TEXT'
+#
 read -n 1 -r -s -p $'                 Hit ENTER To Create PDF\n'
-echo "             Hit CRTL+c To Exit                                           "
+echo "                 Hit CRTL+c To Exit                                           "
 echo "                                                                          "
 clear
+
 #
 # Start Sending Debug Information To Terminal Screen
 #
-set -x
 
 #
-# Clear Screen And Display NO DEBUG NO PROGRESS Panel
-#
-#
-#
-#clear
-#echo "                                                                          "
-#echo "                             _____ _______ ______ __  __                  "
-#echo "                            |  __ \__   __|  ____|  \/  |                 "
-#echo "                            | |__) | | |  | |__  | \  / |                 "
-#echo "                            |  _  /  | |  |  __| | |\/| |                 "
-#echo "                            | | \ \  | |  | |    | |  | |                 "
-#echo "                            |_|  \_\ |_|  |_|    |_|  |_|                 "
-#echo "                                                                          "
-#echo "                                No Debug No Progress                      "
-#echo "                                ********************                      "
-#echo "                                                                          "
-#echo "               Debug is off and I have not yet added a progress bar.      "
-#echo "               Always read code you download, especially on Github.       "
-#echo "                                                                          "
-#sleep 1
-#echo "               This may take a while depending on your install.           "
-#sleep 1
-#echo "               Patience is a virtue when RTFM.                            "
-#echo "                                                                          "
-#echo "               CTRL+c For An Impatient Exit                               "
-#echo "                                                                          "
+set -x
 #
     
 #
@@ -590,11 +590,19 @@ set -x
 #
 enscript -p RTFM.ps RTFM
 
+set +x
+
 clear
+
 echo "               Your Postscript File Has Been Created                        "
 echo "               It Will Be There If You Commented Out It's Removal           "
-sleep 3
+echo "               On To PDF Creation...                                        "
+
+sleep 5
+
 clear
+
+set -x
 #
 # Turn RTFM.ps File Into RTFM.pdf PDF File
 #
@@ -608,11 +616,10 @@ ps2pdf RTFM.ps RTFM.pdf
 # rm RTFM
 # rm RTFM.ps
 #
-    
+
 #
 # Stop Sending Debug Information To Terminal Screen
 #
-set +x
 
 #
 # Play Notification Audio
@@ -620,11 +627,15 @@ set +x
 aplay ./endbell.wav 2>/dev/null
 
 #
+set +x
+#
+
+#
 # Clear Screen And Display RTFM PDF CREATED Panel
 #
 clear
 echo "                                                                          "
-echo "                             _____ _______ ______ __  __                   "
+echo "                             _____ _______ ______ __  __                  "
 echo "                            |  __ \__   __|  ____|  \/  |                 "
 echo "                            | |__) | | |  | |__  | \  / |                 "
 echo "                            |  _  /  | |  |  __| | |\/| |                 "
@@ -635,7 +646,7 @@ echo "                                  RTFM PDF CREATED                        
 echo "                                  ****************                        "
 echo "                                                                          "
 echo "               RTFM Is Done.                                              "
-echo "               $USER , you can now RTFM In PDF. No More Excuses.          "
+echo "               A Brand New RTFM PDF for $USER. No More Excuses.           "
 echo "                                                                          "
 echo "                                                                          "
 read -n 1 -r -s -p $'               Hit ENTER To RTFM in xpdf - CTRL+c To Exit\n'
