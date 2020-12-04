@@ -58,13 +58,13 @@ echo "                            |  _  /  | |  |  __| | |\/| |                 
 echo "                            | | \ \  | |  | |    | |  | |                   "
 echo "                            |_|  \_\ |_|  |_|    |_|  |_|                   "
 echo "                                                                            "    
-echo "                                     WELCOME                                "
-echo "                                     *******                                "
+echo "                                  RTFM INSTRUCTIONS                         "
+echo "                                  *****************                         "
 sleep 1
 echo "                                                                            "    
 echo "               Create A Frigging Manual About Using `uname -o`              "
-echo "               On System `hostname -f`                                     "
-echo "               For $USER To Read, Search And Reference                     "
+echo "               On System `hostname -f`                                      "
+echo "               For $USER To Read, Search And Reference                      "
 echo "                                                                            "
 sleep 2
 echo "               Be Patient On Large Or Slow Builds                           "
@@ -74,7 +74,7 @@ echo "               Do Not Panic!                                              
 sleep 1
 echo "               Debug Set To Show Progress...                                "
 sleep 4
-echo "               If You Do Panic Hit CTRL+c To Exit                          "
+echo "               If You Do Panic Hit CTRL+c To Exit                           "
 sleep 3
 echo "                                                                            "
 echo "               Do You Have What It Takes To Run RTFM?                       "
