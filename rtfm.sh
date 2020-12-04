@@ -547,7 +547,7 @@ echo "                 Saved RTFM edits will transfer to .ps file               
 echo "                 and then pdf file creation                               "
 echo "                                                                          "
 echo "                                                                          "
-read -n 1 -r -s -p $'             Hit ENTER To Create PDF\n'
+read -n 1 -r -s -p $'                 Hit ENTER To Create PDF\n'
 echo "             Hit CRTL+c To Exit                                           "
 echo "                                                                          "
 clear
