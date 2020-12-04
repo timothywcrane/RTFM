@@ -85,7 +85,7 @@ sleep 2
 # Hitting ENTER Continues To Tests For Dependencies - Hit CTRL+c Exits
 #
 echo "                                                                            "
-read -n 1 -r -s -p $'           Hit ENTER To See If You Do - CTRL+c To Exit\n'
+read -n 1 -r -s -p $'               Hit ENTER To See If You Do - CTRL+c To Exit\n'
 echo "                                                                            "
 
 #
