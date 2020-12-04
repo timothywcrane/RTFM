@@ -63,8 +63,8 @@ echo "                                     *******                              
 sleep 1
 echo "                                                                            "    
 echo "               Create A Frigging Manual About Using `uname -o`              "
-echo "               On System: `hostname -f`                                     "
-echo "               For: $USER To Read, Search And Reference                     "
+echo "               On System `hostname -f`                                     "
+echo "               For $USER To Read, Search And Reference                     "
 echo "                                                                            "
 sleep 2
 echo "               Be Patient On Large Or Slow Builds                           "
