@@ -52,4 +52,4 @@
 * Enter directory containing rtfm.sh using your terminal or emulator
 * chmod +x rtfm.sh or make executable in file manager
 * ./rtfm.sh
-* Follow on-screen queues
+* Follow the on-screen queues
