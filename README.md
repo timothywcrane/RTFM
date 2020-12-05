@@ -1,9 +1,9 @@
 # RTFM - Read The Frigging Manual
  ![RTFM](https://github.com/timothywcrane/RTFM/blob/main/rtfm.png?raw=true)
     
-## RTFM is a simple bash script that creates a frigging system manual for you to read, search & reference.
+## RTFM is a simple bash script that creates a frigging system manual for you.
 
-## No more excuses. Make a manual and use it!
+## No more excuses. Make a manual. Read, search & reference it!
 
 ### Please Be Aware:
 
