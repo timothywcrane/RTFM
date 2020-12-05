@@ -227,7 +227,7 @@ echo " "
 if whereis aplay > /dev/null; then
     echo "        found $(enscript2dropbox --version 2>/dev/null)"
 else
-    echo "        enscript2dropbox not found. No Worries ;)"
+    echo "        enscript2dropbox not found. No Worries \;\)"
 fi
 
 echo " "
