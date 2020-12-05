@@ -34,13 +34,13 @@
 
 #### Suggested
   
-* cheat https://github.com/cheat/cheat (optional references) (comment out to disable)
-* tldr https://github.com/tldr-pages/tldr (optional references) (comment out to disable)
+* cheat https://github.com/cheat/cheat (optional references) (comment to disable)
+* tldr https://github.com/tldr-pages/tldr (optional references) (comment to disable)
 * bro pages https://github.com/hubsmoke/bro (optional reference) (uncomment to enable)
     * install rubyx.x-dev
     * then sudo gem install bropages
-* alsa-utils (optional audio notification via aplay) (comment out to disable) 
-* xpdf on a graphical desktop (to RTFM.pdf) (comment out to disable) 
+* alsa-utils (optional audio notification via aplay) (comment to disable) 
+* xpdf on a graphical desktop (to RTFM.pdf) (comment to disable) 
  
  #### Adventurous
    * enscript2dropbox https://github.com/kickingvegas/enscript2dropbox (Fork Me!)
