@@ -1,5 +1,5 @@
 # RTFM - Read The Frigging Manual
- ![RTFM](https://github.com/timothywcrane/RTFM/blob/main/rtfm.png?raw=true)
+ ![RTFM](https://github.com/timothywcrane/RTFM/blob/main/rtfm_instructions.png?raw=true)
 
 ## RTFM creates a frigging system manual for you.
 
