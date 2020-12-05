@@ -91,10 +91,6 @@ echo " "
 read -n 1 -r -s -p $'               Hit Any KEY To Check.\n'
 echo " "
 
-# Play Notification Audio And Continuance Approval
-#
-aplay ./endbell.wav 2>/dev/null
-
 # Clear Screen And Display RTFM DEPENDENCIES
 #
 clear
@@ -111,6 +107,10 @@ echo " "
 echo "                                RTFM DEPENDENCY CHECK"
 echo "                                *********************"
 echo " "
+
+# Play Notification Audio And Continuance Approval
+#
+aplay ./endbell.wav 2>/dev/null &
 
 # Check For And Display RTFM DEPENDENCIES Information
 #
