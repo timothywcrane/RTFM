@@ -270,7 +270,7 @@ echo "           Verify You Have What It Takes Above."
 #
 echo " "
 echo " "
-read -n 1 -r -s -p $'               Hit Any KEY To Continue - CTRL+c To Exit\n'
+read -n 1 -r -s -p $'        Hit Any KEY To Continue - CTRL+c To Exit\n'
 echo " "
 
 # Clear Screen And Display RTFM Texts Creation                                    
