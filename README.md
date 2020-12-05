@@ -42,7 +42,8 @@
 * alsa-utils (optional audio notification via aplay) (comment to disable) 
 * xpdf on a graphical desktop (to RTFM.pdf) (comment to disable) 
  
- #### Adventurous
+ ##### Adventurous
+ 
    * enscript2dropbox https://github.com/kickingvegas/enscript2dropbox (Fork Me!)
    
 ### How To Run:
