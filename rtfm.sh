@@ -576,7 +576,7 @@ echo "                                    **********"
 echo " "
 echo "               Your Postscript File Has Been Created"
 echo "               It Will Be There If You Commented Out It's Removal"
-echo "               On To PDF Creation..."
+echo "               On To PDF Creation...Wait For It."
 echo " "
 echo " "
 sleep 6
