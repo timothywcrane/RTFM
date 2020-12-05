@@ -44,7 +44,6 @@
 #-------------------------------------------------------------------------------------------#
 #                                                                                           #
 
-#
 # Clear Screen And Display WELCOME                                
 #                                     
 clear
@@ -86,15 +85,12 @@ echo " "
 echo "               Do You Have What It Takes To Run RTFM?                                "
 sleep 1
 
-
-#
 # Hitting ENTER Continues 'TEXT'
 #
 echo "                                                                                     "
 read -n 1 -r -s -p $'               Hit Any KEY To Check.\n'
 echo "                                                                                     "
 
-#
 # Clear Screen And Display RTFM DEPENDENCIES
 #
 clear
@@ -111,7 +107,7 @@ echo " "
 echo "                                RTFM DEPENDENCY CHECK"
 echo "                                *********************"
 echo " "
-#
+
 # Check For And Display RTFM DEPENDENCIES Information
 #
 #
@@ -121,7 +117,6 @@ echo "                                                                          
 echo "        REQUIRED                                                                     "
 echo "                                                                                     "
 
-#
 # Bash
 #
 echo "                                                                                     "
@@ -134,7 +129,6 @@ else
     echo "        bash not found. Please install before running RTFM.                      "
 fi
 
-#
 # Enscript
 #
 echo "                                                                                     "
@@ -147,7 +141,6 @@ else
     echo "        enscript not found. Please install before running RTFM.                  "
 fi
 
-#
 # Ghostscript
 #
 echo "                                                                                     "
@@ -160,14 +153,12 @@ else
     echo "        ghostscript not found. Please install before running RTFM.               "
 fi
 
-#
 # Suggested
 #                                                                                     "
 echo "                                                                                     "
 echo "           SUGGESTED                                                                 "
 echo "                                                                                     "
 
-#
 # Alsa-Utils
 #
 echo "                                                                                     "
@@ -180,7 +171,6 @@ else
     echo "        aplay not found. Consider installing for sound notifications             "
 fi
 
-#
 # Cheat
 #
 echo "                                                                                     "
@@ -193,7 +183,6 @@ else
     echo "        cheat not found. Consider installing for extra functionality.            "
 fi
 
-#
 # Tldr
 #
 echo "                                                                                     "
@@ -202,14 +191,10 @@ echo "               https://github.com/tldr-pages/tldr                         
 echo "                                                                                     "
 if whereis tldr > /dev/null; then
     echo "        found tldr                                                               "
-#
-# get tldr version
-#
 else
     echo "        tldr not found. Consider installing for extra functionality.             "
 fi
 
-#
 # Bro
 #
 echo "                                                                                     "
@@ -224,12 +209,11 @@ fi
 
 echo " "
 echo "           Verify You Have What It Takes Above.                                      "
-#
+
 # Play Notification Audio And Continuance Approval
 #
 aplay ./endbell.wav 2>/dev/null
 
-#
 # Hitting ENTER Continues 'TEXT'
 #
 echo "                                                                                     "
@@ -237,8 +221,6 @@ echo "                                                                          
 read -n 1 -r -s -p $'               Hit Any KEY To Continue - CTRL+c To Exit\n'
 echo "                                                                                     "
 
-
-#
 # Clear Screen And Display RTFM Texts Creation                                    
 #
 clear
@@ -271,32 +253,27 @@ echo " "
 sleep 3
 echo " "
 
-#
 # Hitting ENTER Continues 'TEXT'
 #
 echo "                                                                                     "
 read -n 1 -r -s -p $'               Hit Any KEY To Begin - CTRL+c To Exit\n'
 echo "                                                                                     "
 
-#
 # TODO - Add A Looping Death Metal Soundtrack Via aplay Concurrent With The Debug Stream
 #
 
-clear 
+clear
+
 #
 # Start Sending Debug Information To Terminal Screen
 #    
-
-#
 set -x
-#
 
-#
 # Create RTFM file And Wait 1 Second Before Creating The Text Files
 #
 touch RTFM
 sleep 1
-#
+
 # Populate RTFM Text File With System Manual Information
 #
 #
@@ -314,32 +291,27 @@ echo "                                                                          
 echo "*************************************************************************************" >> RTFM
 echo "                                                                                     " >> RTFM
 
-#
 #  Print The Generic OS Type "Manual for" The Logged In User "on" Fully Qualified System Name
 #
 echo "`uname -o` Manual for $USER on `hostname -f`:                                        " >> RTFM
 echo "                                                                                     " >> RTFM
 
-#
 # Get hostnamectl Information And Add To Bottom Of RTFM File
 #
 hostnamectl >> RTFM 2>&1
 echo "                                                                                     " >> RTFM
 
-
-#
 # Get Number Of Installed Packages And Add To Bottom Of RTFM File
 # 
 echo " `apt list --installed | wc -l` packages currently installed                         " >> RTFM 2>/dev/null
 echo "                                                                                     " >> RTFM
-#
+
 # Add Line Decoration To Bottom Of RTFM End Capping The Summary Section
 #
 echo "                                                                                     " >> RTFM
 echo "*************************************************************************************" >> RTFM
 echo "                                                                                     " >> RTFM
 
-#
 # Add TOC Header To Bottom Of RTFM File
 #
 echo "                          " >> RTFM
@@ -354,7 +326,6 @@ echo "                          " >> RTFM
 echo "**************************" >> RTFM
 echo "                          " >> RTFM
     
-#
 # Add Section 1 Header To Bottom Of RTFM File
 #
 echo "                          " >> RTFM
@@ -365,26 +336,22 @@ echo "                          " >> RTFM
 echo "**************************" >> RTFM
 echo "                          " >> RTFM
 
-#
 # Create packages file
 #
 touch packages
 
 
-#
 # Get And Insert Installed Packages Into packages And Bottom Of RTFM File
 #
 apt list --installed > packages
 apt list --installed | cut -d / -f 1 packages >> RTFM
 
-#
 # Add Line Decoration To Bottom Of RTFM End Capping The Installed Packages Section
 #
 echo "                                                                                     " >> RTFM
 echo "*************************************************************************************" >> RTFM
 echo "                                                                                     " >> RTFM
 
-#
 # Add Section 2 Header To Bottom Of RTFM File
 #
 echo "                          " >> RTFM
@@ -395,7 +362,6 @@ echo "                          " >> RTFM
 echo "**************************" >> RTFM
 echo "                          " >> RTFM
 
-#
 # Create commands File. Get Available Command List. Add To commands File And To Bottom Of RTFM File.
 #
 #
@@ -403,24 +369,20 @@ echo "                          " >> RTFM
 #
 touch commands
 
-#
 # Get And Add Available Commands To commands File
 #
 compgen -bcegksuv |sort|uniq > commands
 
-#
 # Get And Add Available Commands To Bottom Of RTFM File
 #
 compgen -bcegksuv |sort|uniq >> RTFM
 
-#
 # Add Line Decoration To Bottom Of RTFM File End Capping The Available Commands Section
 #
 echo "                                                                                     " >> RTFM
 echo "*************************************************************************************" >> RTFM
 echo "                                                                                     " >> RTFM
 
-#
 # Add Section 3 Header To Bottom Of RTFM File
 #
 echo "                          " >> RTFM
@@ -431,7 +393,6 @@ echo "                          " >> RTFM
 echo "**************************" >> RTFM
 echo "                          " >> RTFM
 
-#
 # A While-Loop That Queries Your System, Adds Informational Headers
 # And Reference Information For Each Line In commands To Bottom Of RTFM
 #
@@ -464,8 +425,9 @@ echo "                          " >> RTFM
     #  * echo " "
     #  * echo "** HELP $p                  " >> RTFM
     #  * help $p                             >> RTFM 2>&1 HELP IS BUGGY
-    echo "                            " >> RTFM
-    echo "** WHAT IS $p ?             " >> RTFM 2>/dev/null 
+while read p; do
+    echo " * The $p COMMAND Reference " >> RTFM
+    echo "                            " >> RTFM 
     whatis $p >> RTFM 2>&1
     echo "                            " >> RTFM
     echo "** WHEREIS $p ?             " >> RTFM 
@@ -489,18 +451,15 @@ echo "                                                                          
 echo "*************************************************************************************" >> RTFM
 echo "                                                                                     " >> RTFM
 
-#
 # Stop Sending Debug Information To Terminal Screen
 #
 set +x
 
-#
 # Play Notification Audio
 #
 aplay ./endbell.wav 2>/dev/null
 
 
-#
 # Clear Screen And Display RTFM TEXT CREATED Panel
 #
 clear
@@ -527,29 +486,26 @@ echo "                 and then into pdf file created"
 echo "                                               "
 echo "                                               "
 
-#
 # Hitting ENTER Continues 'TEXT'
 #
 read -n 1 -r -s -p $'                 Hit Any KEY To Create PDF - CRTL+c To Exit\n'
 echo " "
 
 
-#
-# Clear And Start Sending Debug Information To Terminal Screen
-#
 
+# Clear And Start Sending Debug Information To Terminal Screen
 #
 clear
 set -x
-#
+
     
-#
+
 # Turn RTFM Text File Into RTFM.ps Postscript File Then End Debug
 #
 enscript -p RTFM.ps RTFM
 set +x
 
-#
+
 # Clear Screen And Display PS CREATED
 #
 clear
@@ -573,18 +529,18 @@ echo " "
 echo " "
 sleep 6
 
-#
+
 # Clear And Start Sending Debug Information To Terminal Screen
 #
 clear
 set -x
 
-#
+
 # Turn RTFM.ps File Into RTFM.pdf PDF File. Play Bell. End Debug.
 #
 ps2pdf RTFM.ps RTFM.pdf
 
-#
+
 # Optional Removal Of Intermediate Files
 #
 # rm packages
@@ -593,18 +549,18 @@ ps2pdf RTFM.ps RTFM.pdf
 # rm RTFM.ps
 #
 
-#
+
 # Play Notification Audio
 #
 aplay ./endbell.wav 2>/dev/null
 
-#
+
 # Stop Sending Debug Information To Terminal Screen
 #
 #
 set +x
 
-#
+
 # Clear Screen And Display RTFM PDF CREATED Panel
 #
 clear
@@ -627,12 +583,10 @@ echo " "
 echo " "
 read -n 1 -r -s -p $'               Hit Any KEY To RTFM in xpdf - CTRL+c To Exit\n'
 
-#
 # Open RTFM.pdf in xpdf Viewer
 #
 xpdf RTFM.pdf &
-    
-#
+
 # Clear And Goodbye
 #
 clear
