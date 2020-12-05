@@ -21,15 +21,15 @@
                 # *           Shell Script                                * #
                 # *                                                       * #
                 # * Description    : RTFM is a simple Bash script         * #
-                # *     that creates a frigging custom system manual      * #
-                # *     for you to read, search and reference.            * #
+                # *     that creates a frigging user manual on your       * #
+                # *     system for you to read, search and reference.     * #
                 # *                                                       * #
                 # *     No more excuses. Make a manual and use it.        * #
                 # *                                                       * #
                 # *                   Do Not Panic!                       * #
                 # *                                                       * #
                 # *                                                       * #
-                # * Version  :  Pre-Alpha-0.0.1                           * #
+                # * Version  :  Pre-Alpha-0.0.3 Codename: UglyTruth       * #
                 # *                                                       * #
                 # * Author   :  Timothy W. Crane                          * #
                 # *                                                       * #
