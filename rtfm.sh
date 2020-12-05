@@ -243,7 +243,7 @@ echo " "
 #                                                                                     
 
 echo " "
-echo "           Adventurous"
+echo "           ADVENTUROUS"
 
 
 # Enscript2dropbox
