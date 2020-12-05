@@ -478,8 +478,17 @@ echo " " >> RTFM
     #  * echo "** HELP $p                  " >> RTFM
     #  * help $p                             >> RTFM 2>&1 HELP IS BUGGY
 while read p; do
-    echo " ********** The $p COMMAND Reference **********" >> RTFM
-    echo "                            " >> RTFM 
+    echo " " >> RTFM
+    echo "*************************************************************************************" >> RTFM
+    echo "  " >> RTFM
+    echo "************************************************" >> RTFM 
+    echo "**                                            **" >> RTFM
+    echo "**          The $p COMMAND Reference          **" >> RTFM
+    echo "**                                            **" >> RTFM
+    echo "************************************************" >> RTFM
+    echo " " >> RTFM
+    echo "*************************************************************************************" >> RTFM
+    echo "  " >> RTFM
     whatis $p >> RTFM 2>&1
     echo "                            " >> RTFM
     echo "** WHEREIS $p ?             " >> RTFM 
