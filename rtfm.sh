@@ -208,8 +208,8 @@ echo " "
 echo "Tldr"
 echo "To Long...Didn't Read."
 echo "https://github.com/tldr-pages/tldr"
-echo "$(tldr tldr 2>/dev/null)"
-#echo "Whereis: $(whereis tldr 2>/dev/null) "
+#echo "$(tldr tldr 2>/dev/null)"
+echo "Whereis: $(whereis tldr 2>/dev/null) "
 echo " "
 
 #if whereis tldr 2>/dev/null; then
@@ -245,12 +245,12 @@ echo "           Adventurous"
 # Enscript2dropbox
 #
 echo " "
-echo "  enscript2dropbox"
-echo "  Hack Your Frigging Manual Over To Dropbox"
-echo "  https://github.com/kickingvegas/enscript2dropbox"
-echo "  Found Version: $(enscript2dropbox --version 2>/dev/null)"
-echo "  Whatis:$(whatis enscript2dropbox 2>/dev/null)"
-echo "  Whereis: $(whereis enscript2dropbox 2>/dev/null) "
+echo "enscript2dropbox"
+echo "Hack Your Frigging Manual Over To Dropbox"
+echo "https://github.com/kickingvegas/enscript2dropbox"
+echo "Found Version: $(enscript2dropbox --version 2>/dev/null)"
+echo "Whatis:$(whatis enscript2dropbox 2>/dev/null)"
+echo "Whereis: $(whereis enscript2dropbox 2>/dev/null) "
 echo " "
 
 #if whereis enscript2dropbox 2> /dev/null; then
