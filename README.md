@@ -11,11 +11,11 @@
 * This script is meant to be a "hammer" on purpose.
 * Debug output has been set up by default to provide a poor man's progress bar. 
 * No fancy pdf formatting.
-* No Unicode Support.
-* packages, commands listed in text
-* RTFM in text, ps and pdf
-* Multiple Reference Resources
-* Super simple script. Modify to your liking.
+* No unicode support.
+* RTFM, packages list & command list in text format
+* RTFM also available in ps and pdf
+* Multiple reference resources
+* Super simple script - modify to your liking.
 
 ### Dependencies:
 
