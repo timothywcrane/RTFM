@@ -112,103 +112,126 @@ echo " "
 #
 #
 # Required
-#                                                                                    
-echo "                                                                                     "
-echo "        REQUIRED                                                                     "
-echo "                                                                                     "
+# 
+echo " ""
+echo "        REQUIRED"
 
 # Bash
 #
-echo "                                                                                     "
-echo "               Bash                                                                  "
-echo "               The Bourne Again Shell                                                "
+echo " "
+echo "               Bash"
+echo "               The Bourne Again Shell"
+echo "               https://github.com/topics/bash"
 echo "                                                                                     "
 if whereis bash > /dev/null; then
-    echo "        found bash version: $(bash --version | head -n 1)                        "
+    echo "        found bash version: $(bash --version | head -n 1)"
 else
-    echo "        bash not found. Please install before running RTFM.                      "
+    echo "        bash not found. Please install before running RTFM."
 fi
 
 # Enscript
 #
-echo "                                                                                     "
-echo "               Enscript                                                              "
-echo "               For Text To Postscript (.ps is the P in PDF)                          "
-echo "                                                                                     "
+echo " "
+echo "               Enscript"
+echo "               For Text To Postscript (.ps is the P in PDF)"
+echo " "
 if whereis enscript > /dev/null; then
-    echo "        found enscript version: $(enscript --version | head -n 1 2>/dev/null)    "
+    echo "        found enscript version: $(enscript --version | head -n 1 2>/dev/null)"
 else
-    echo "        enscript not found. Please install before running RTFM.                  "
+    echo "        enscript not found. Please install before running RTFM."
 fi
 
 # Ghostscript
 #
-echo "                                                                                     "
-echo "               Ghostscript                                                           "
-echo "               For Postscript To PDF                                                 "
-echo "                                                                                     "
+echo " "
+echo "               Ghostscript"
+echo "               For Postscript To PDF"
+echo "               https://ghostscript.com/"
+echo " "
 if whereis ghostscript > /dev/null; then
-    echo "        found ghostscript version: $(ghostscript --version 2>/dev/null)          "
+    echo "        found ghostscript version: $(ghostscript --version 2>/dev/null)"
 else
-    echo "        ghostscript not found. Please install before running RTFM.               "
+    echo "        ghostscript not found. Please install before running RTFM."
 fi
 
 # Suggested
-#                                                                                     "
-echo "                                                                                     "
-echo "           SUGGESTED                                                                 "
-echo "                                                                                     "
+#                                                                                     
+
+echo " "
+echo "           SUGGESTED"
+
 
 # Alsa-Utils
 #
-echo "                                                                                     "
-echo "               Alsa-utils                                                            "
-echo "               For audio play through aplay                                          "
-echo "                                                                                     "
-if whereis aplay > /dev/null; then
-    echo "        found $(aplay --version 2>/dev/null)                                     "
+echo " "
+echo "               Alsa-utils"
+echo "               For audio play through aplay"
+echo "               https://github.com/alsa-project/alsa-utils"
+echo " "
+if whereis cheat > /dev/null; then
+    echo "        found aplay version: $(aplay --version 2>/dev/null)"
 else
-    echo "        aplay not found. Consider installing for sound notifications             "
+    echo "        aplay not found. Consider installing alsa-utils for soundfunctionality."
 fi
 
 # Cheat
 #
-echo "                                                                                     "
-echo "               Cheat                                                                 "
-echo "               https://github.com/cheat/cheat                                        "
-echo "                                                                                     "
+echo " "
+echo "               Cheat"
+echo "               https://github.com/cheat/cheat"
+echo " "
 if whereis cheat > /dev/null; then
-    echo "        found cheat version: $(cheat --version 2>/dev/null)                      "
+    echo "        found cheat version: $(cheat --version 2>/dev/null)"
 else
-    echo "        cheat not found. Consider installing for extra functionality.            "
+    echo "        cheat not found. Consider installing for extra functionality."
 fi
 
 # Tldr
 #
-echo "                                                                                     "
-echo "               Tldr                                                                  "
-echo "               https://github.com/tldr-pages/tldr                                    "
-echo "                                                                                     "
+echo " "
+echo "               Tldr"
+echo "               https://github.com/tldr-pages/tldr"
+echo " "
 if whereis tldr > /dev/null; then
-    echo "        found tldr                                                               "
+    echo "        found tldr"
 else
-    echo "        tldr not found. Consider installing for extra functionality.             "
+    echo "        tldr not found. Consider installing for extra functionality."
 fi
 
 # Bro
 #
-echo "                                                                                     "
-echo "               Bro Pages                                                             "
-echo "               https://github.com/hubsmoke/bro                                       "
-echo "                                                                                     "
+echo " "
+echo "               Bro Pages"
+echo "               https://github.com/hubsmoke/bro"
+echo " "
 if whereis bro > /dev/null; then
-    echo "        found bro version  $(bro --version 2>/dev/null)                          "
+    echo "        found bro version  $(bro --version 2>/dev/null)"
 else
-    echo "        bro not found. Consider installing for extra functionality.              "
+    echo "        bro not found. Consider installing for extra functionality."
+fi
+
+# Adventurous
+#                                                                                     
+
+echo " "
+echo "           Adventurous"
+
+
+# Alsa-Utils
+#
+echo " "
+echo "               enscript2dropbox"
+echo "               Hack Your Frigging Manual Over To Dropbox"
+echo "               https://github.com/kickingvegas/enscript2dropbox"
+echo " "
+if whereis aplay > /dev/null; then
+    echo "        found $(enscript2dropbox --version 2>/dev/null)"
+else
+    echo "        enscript2dropbox not found. No Worries ;)"
 fi
 
 echo " "
-echo "           Verify You Have What It Takes Above.                                      "
+echo "           Verify You Have What It Takes Above."
 
 # Play Notification Audio And Continuance Approval
 #
@@ -216,10 +239,10 @@ aplay ./endbell.wav 2>/dev/null
 
 # Hitting ENTER Continues 'TEXT'
 #
-echo "                                                                                     "
-echo "                                                                                     "
+echo " "
+echo " "
 read -n 1 -r -s -p $'               Hit Any KEY To Continue - CTRL+c To Exit\n'
-echo "                                                                                     "
+echo " "
 
 # Clear Screen And Display RTFM Texts Creation                                    
 #
@@ -255,9 +278,9 @@ echo " "
 
 # Hitting ENTER Continues 'TEXT'
 #
-echo "                                                                                     "
+echo " "
 read -n 1 -r -s -p $'               Hit Any KEY To Begin - CTRL+c To Exit\n'
-echo "                                                                                     "
+echo " "
 
 # TODO - Add A Looping Death Metal Soundtrack Via aplay Concurrent With The Debug Stream
 #
