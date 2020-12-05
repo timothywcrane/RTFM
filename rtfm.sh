@@ -82,14 +82,14 @@ echo " "
 echo "               If You Do Panic Just Hit CTRL+c"
 sleep 2
 echo " "
-echo "               Do You Have What It Takes To Run RTFM?                                "
+echo "               Do You Have What It Takes To Run RTFM?"
 sleep 1
 
 # Hitting ENTER Continues 'TEXT'
 #
-echo "                                                                                     "
+echo " "
 read -n 1 -r -s -p $'               Hit Any KEY To Check.\n'
-echo "                                                                                     "
+echo " "
 
 # Clear Screen And Display RTFM DEPENDENCIES
 #
@@ -113,46 +113,55 @@ echo " "
 #
 # Required
 # 
-echo " ""
+echo " "
 echo "        REQUIRED"
 
 # Bash
 #
 echo " "
-echo "               Bash"
-echo "               The Bourne Again Shell"
-echo "               https://github.com/topics/bash"
-echo "                                                                                     "
-if whereis bash > /dev/null; then
-    echo "        found bash version: $(bash --version | head -n 1)"
-else
-    echo "        bash not found. Please install before running RTFM."
-fi
+echo "Bash"
+echo "Found Version: $(bash --version | head -n 1 2>/dev/null)"
+echo "https://github.com/topics/bash"
+echo "Whatis:$(whatis bash 2>/dev/null)"
+echo "Whereis: $(whereis bash 2>/dev/null) "
+echo " "
+
+#if whatis bash 2>/dev/null; then
+#    echo "        found bash version: $(bash --version | head -n 1)"
+#else
+#    echo "        bash not found. Please install before running RTFM."
+#fi
 
 # Enscript
 #
 echo " "
-echo "               Enscript"
-echo "               For Text To Postscript - the P \in PDF"
+echo "Enscript"
+echo "Found Version: $(enscript --version 2>/dev/null)"
+echo "Whatis:$(whatis enscript 2>/dev/null)"
+echo "Whereis: $(whereis enscript 2>/dev/null)"
 echo " "
-if whereis enscript > /dev/null; then
-    echo "        found enscript version: $(enscript --version | head -n 1 2>/dev/null)"
-else
-    echo "        enscript not found. Please install before running RTFM."
-fi
+
+#if whereis enscript 2>/dev/null; then
+#    echo "        found enscript version: $(enscript --version | head -n 1 2>/dev/null)"
+#else
+#    echo "        enscript not found. Please install before running RTFM."
+#fi
 
 # Ghostscript
 #
 echo " "
-echo "               Ghostscript"
-echo "               For Postscript To PDF"
-echo "               https://ghostscript.com/"
+echo "Ghostscript"
+echo "Found Version: $(ghostscript --version 2>/dev/null)"
+echo "https://ghostscript.com/"
+echo "Whatis:$(whatis ghostscrtipt 2>/dev/null)"
+echo "Whereis: $(whereis ghostscript 2>/dev/null) "
 echo " "
-if whereis ghostscript > /dev/null; then
-    echo "        found ghostscript version: $(ghostscript --version 2>/dev/null)"
-else
-    echo "        ghostscript not found. Please install before running RTFM."
-fi
+
+#if whereis ghostscript 2>/dev/null; then
+#    echo "        found ghostscript version: $(ghostscript --version 2>/dev/null)"
+#else
+#    echo "        ghostscript not found. Please install before running RTFM."
+#fi
 
 # Suggested
 #                                                                                     
@@ -164,51 +173,67 @@ echo "           SUGGESTED"
 # Alsa-Utils
 #
 echo " "
-echo "               Alsa-utils"
-echo "               For audio play through aplay"
-echo "               https://github.com/alsa-project/alsa-utils"
+echo "Alsa-utils"
+echo "aplay Audio"
+echo "Found Version: $(aplay --version 2>/dev/null)"
+echo "Whatis:$(whatis aplay 2>/dev/null)"
+echo "Whereis: $(whereis aplay 2>/dev/null) "
 echo " "
-if whereis cheat > /dev/null; then
-    echo "        found aplay version: $(aplay --version 2>/dev/null)"
-else
-    echo "        aplay not found. Consider installing alsa-utils for soundfunctionality."
-fi
+
+#if whereis cheat 2>/dev/null; then
+#    echo "        found aplay version: $(aplay --version 2>/dev/null)"
+#else
+#    echo "        aplay not found. Consider installing alsa-utils for soundfunctionality."
+#fi
 
 # Cheat
 #
 echo " "
-echo "               Cheat"
-echo "               https://github.com/cheat/cheat"
+echo "Cheat"
+echo "https://github.com/cheat/cheat"
+echo "Found Version: $(cheat --version 2>/dev/null)"
+#echo "$(cheat cheat 2>/dev/null)"
+echo "Whereis: $(whereis cheat 2>/dev/null) "
 echo " "
-if whereis cheat > /dev/null; then
-    echo "        found cheat version: $(cheat --version 2>/dev/null)"
-else
-    echo "        cheat not found. Consider installing for extra functionality."
-fi
+
+#if whereis cheat 2>/dev/null; then
+#    echo "        found cheat version: $(cheat --version 2>/dev/null)"
+#else
+#    echo "        cheat not found. Consider installing for extra functionality."
+#fi
 
 # Tldr
 #
 echo " "
-echo "               Tldr"
-echo "               https://github.com/tldr-pages/tldr"
+echo "Tldr"
+echo "To Long...Didn't Read."
+echo "https://github.com/tldr-pages/tldr"
+echo "$(tldr tldr 2>/dev/null)"
+#echo "Whereis: $(whereis tldr 2>/dev/null) "
 echo " "
-if whereis tldr > /dev/null; then
-    echo "        found tldr"
-else
-    echo "        tldr not found. Consider installing for extra functionality."
-fi
+
+#if whereis tldr 2>/dev/null; then
+#    echo "        found tldr"
+#else
+#    echo "        tldr not found. Consider installing for extra functionality."
+#fi
 
 # Bro
 #
 echo " "
-echo "               Bro Pages"
-echo "               https://github.com/hubsmoke/bro"
+echo "Bro Pages"
+echo "Collaborate, Man."
+echo "https://github.com/hubsmoke/bro"
+echo "Found Version: $(bro --version 2>/dev/null)"
+#echo "Whatis:$(bro bro 2>/dev/null)"
+echo "Whereis: $(whereis bro 2>/dev/null) "
 echo " "
-if whereis bro > /dev/null; then
-    echo "        found bro version  $(bro --version 2>/dev/null)"
-else
-    echo "        bro not found. Consider installing for extra functionality."
-fi
+
+#if whereis bro 2>/dev/null; then
+#    echo "        found bro version  $(bro --version 2>/dev/null)"
+#else
+#    echo "        bro not found. Consider installing for extra functionality."
+#fi
 
 # Adventurous
 #                                                                                     
@@ -217,18 +242,22 @@ echo " "
 echo "           Adventurous"
 
 
-# Alsa-Utils
+# Enscript2dropbox
 #
 echo " "
-echo "               enscript2dropbox"
-echo "               Hack Your Frigging Manual Over To Dropbox"
-echo "               https://github.com/kickingvegas/enscript2dropbox"
+echo "  enscript2dropbox"
+echo "  Hack Your Frigging Manual Over To Dropbox"
+echo "  https://github.com/kickingvegas/enscript2dropbox"
+echo "  Found Version: $(enscript2dropbox --version 2>/dev/null)"
+echo "  Whatis:$(whatis enscript2dropbox 2>/dev/null)"
+echo "  Whereis: $(whereis enscript2dropbox 2>/dev/null) "
 echo " "
-if whereis aplay > /dev/null; then
-    echo "        found $(enscript2dropbox --version 2>/dev/null)"
-else
-    echo "        enscript2dropbox not found. No Worries \;\)"
-fi
+
+#if whereis enscript2dropbox 2> /dev/null; then
+#    echo "        found $(enscript2dropbox --version 2>/dev/null)"
+#else
+#    echo "        enscript2dropbox not found. No Worries ;)"
+#fi
 
 echo " "
 echo "           Verify You Have What It Takes Above."
@@ -316,48 +345,48 @@ echo "                                                                          
 
 #  Print The Generic OS Type "Manual for" The Logged In User "on" Fully Qualified System Name
 #
-echo "`uname -o` Manual for $USER on `hostname -f`:                                        " >> RTFM
-echo "                                                                                     " >> RTFM
+echo "`uname -o` Manual for $USER on `hostname -f`:" >> RTFM
+echo " " >> RTFM
 
 # Get hostnamectl Information And Add To Bottom Of RTFM File
 #
 hostnamectl >> RTFM 2>&1
-echo "                                                                                     " >> RTFM
+echo " " >> RTFM
 
 # Get Number Of Installed Packages And Add To Bottom Of RTFM File
 # 
-echo " `apt list --installed | wc -l` packages currently installed                         " >> RTFM 2>/dev/null
-echo "                                                                                     " >> RTFM
+echo " `apt list --installed | wc -l` packages currently installed" >> RTFM 2>/dev/null
+echo " " >> RTFM
 
 # Add Line Decoration To Bottom Of RTFM End Capping The Summary Section
 #
-echo "                                                                                     " >> RTFM
+echo " " >> RTFM
 echo "*************************************************************************************" >> RTFM
-echo "                                                                                     " >> RTFM
+echo " " >> RTFM
 
 # Add TOC Header To Bottom Of RTFM File
 #
-echo "                          " >> RTFM
+echo " " >> RTFM
 echo "**************************" >> RTFM
 echo "         CONTENTS         " >> RTFM
 echo "           ****           " >> RTFM
-echo "                          " >> RTFM
+echo " " >> RTFM
 echo "  1. Installed Packages   " >> RTFM
 echo "  2. Available Commands   " >> RTFM
 echo "  3. Command References   " >> RTFM
-echo "                          " >> RTFM
+echo " " >> RTFM
 echo "**************************" >> RTFM
-echo "                          " >> RTFM
+echo " " >> RTFM
     
 # Add Section 1 Header To Bottom Of RTFM File
 #
-echo "                          " >> RTFM
+echo " " >> RTFM
 echo "**************************" >> RTFM
-echo "                          " >> RTFM
+echo " " >> RTFM
 echo " 1. Installed Packages    " >> RTFM
-echo "                          " >> RTFM
+echo " " >> RTFM
 echo "**************************" >> RTFM
-echo "                          " >> RTFM
+echo " " >> RTFM
 
 # Create packages file
 #
@@ -371,19 +400,19 @@ apt list --installed | cut -d / -f 1 packages >> RTFM
 
 # Add Line Decoration To Bottom Of RTFM End Capping The Installed Packages Section
 #
-echo "                                                                                     " >> RTFM
+echo " " >> RTFM
 echo "*************************************************************************************" >> RTFM
-echo "                                                                                     " >> RTFM
+echo " " >> RTFM
 
 # Add Section 2 Header To Bottom Of RTFM File
 #
-echo "                          " >> RTFM
+echo " " >> RTFM
 echo "**************************" >> RTFM
-echo "                          " >> RTFM
+echo " " >> RTFM
 echo " 2. Available Commands    " >> RTFM
 echo "                          " >> RTFM
 echo "**************************" >> RTFM
-echo "                          " >> RTFM
+echo " " >> RTFM
 
 # Create commands File. Get Available Command List. Add To commands File And To Bottom Of RTFM File.
 #
@@ -402,19 +431,19 @@ compgen -bcegksuv |sort|uniq >> RTFM
 
 # Add Line Decoration To Bottom Of RTFM File End Capping The Available Commands Section
 #
-echo "                                                                                     " >> RTFM
+echo " " >> RTFM
 echo "*************************************************************************************" >> RTFM
-echo "                                                                                     " >> RTFM
+echo "  " >> RTFM
 
 # Add Section 3 Header To Bottom Of RTFM File
 #
-echo "                          " >> RTFM
+echo " " >> RTFM
 echo "**************************" >> RTFM
-echo "                          " >> RTFM
+echo " " >> RTFM
 echo "  3. Command References   " >> RTFM
-echo "                          " >> RTFM
+echo " " >> RTFM
 echo "**************************" >> RTFM
-echo "                          " >> RTFM
+echo " " >> RTFM
 
 # A While-Loop That Queries Your System, Adds Informational Headers
 # And Reference Information For Each Line In commands To Bottom Of RTFM
@@ -449,7 +478,7 @@ echo "                          " >> RTFM
     #  * echo "** HELP $p                  " >> RTFM
     #  * help $p                             >> RTFM 2>&1 HELP IS BUGGY
 while read p; do
-    echo " * The $p COMMAND Reference " >> RTFM
+    echo " ********** The $p COMMAND Reference **********" >> RTFM
     echo "                            " >> RTFM 
     whatis $p >> RTFM 2>&1
     echo "                            " >> RTFM
@@ -470,9 +499,9 @@ while read p; do
     apropos -e $p >> RTFM 2>&1
     echo "                            " >> RTFM
 done < commands
-echo "                                                                                     " >> RTFM
+echo " " >> RTFM
 echo "*************************************************************************************" >> RTFM
-echo "                                                                                     " >> RTFM
+echo " " >> RTFM
 
 # Stop Sending Debug Information To Terminal Screen
 #
