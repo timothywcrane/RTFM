@@ -11,6 +11,8 @@
 
 ### Please Be Aware:
 
+* Version: Pre-Alpha 0.0.3
+* CodeName: UglyTruth  - Does What It Says...Not Pretty
 * This script is NOT optimized in any way for performance. 
 * This script is meant to be a "hammer" on purpose.
 * Debug output has been set up by default to provide a poor man's progress bar. 
