@@ -133,7 +133,7 @@ fi
 #
 echo " "
 echo "               Enscript"
-echo "               For Text To Postscript (.ps is the P in PDF)"
+echo "               For Text To Postscript - the P \in PDF"
 echo " "
 if whereis enscript > /dev/null; then
     echo "        found enscript version: $(enscript --version | head -n 1 2>/dev/null)"
