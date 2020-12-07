@@ -1,5 +1,5 @@
 #!/bin/bash
-# Main Version  :  Pre-Alpha-0.0.3 Codename: UglyTruth                                                                                      #
+# Main Version  :  Pre-Alpha-0.0.3 Codename: UglyTruth
 #-------------------------------------------------------------------------------------------#
 #                                                                                           #
                 #############################################################
@@ -20,7 +20,7 @@
                 # * Name    : rtfm.sh - Read The Frigging Manual          * #
                 # *           Shell Script                                * #
                 # *                                                       * #
-                # * Description    : RTFM is a simple Bash script         * #
+                # * Description    : A simple Bash script         * #
                 # *     that creates a frigging user manual on your       * #
                 # *     system for you to read, search and reference.     * #
                 # *                                                       * #
@@ -44,81 +44,80 @@
 #-------------------------------------------------------------------------------------------#
 #                                                                                           #
 
-# Clear Screen And Display WELCOME                                
+# Clear Screen And Display RTFM INSTRUCTIONS                                
 #                                     
 clear
 echo " "
-echo "                            *****************************"
-echo "                            *****************************"
-echo "                             _____ _______ ______ __  __ "
-echo "                            |  __ \__   __|  ____|  \/  |"
-echo "                            | |__) | | |  | |__  | \  / |"
-echo "                            |  _  /  | |  |  __| | |\/| |"
-echo "                            | | \ \  | |  | |    | |  | |"
-echo "                            |_|  \_\ |_|  |_|    |_|  |_|"
+echo "              *****************************"
+echo "              *****************************"
+echo "              ______ _______ ______ __  __ "
+echo "              |  __ \__   __|  ____|  \/  |"
+echo "              | |__) | | |  | |__  | \  / |"
+echo "              |  _  /  | |  |  __| | |\/| |"
+echo "              | | \ \  | |  | |    | |  | |"
+echo "              |_|  \_\ |_|  |_|    |_|  |_|"
 echo " "    
-echo "                                  RTFM INSTRUCTIONS"
-echo "                                  *****************"
+echo "                    RTFM INSTRUCTIONS"
+echo "                    *****************"
 echo " "
 sleep 1
-echo "               Just Follow The Prompts To Create A Frigging Manual"
+echo "Just Follow The Prompts To Create A Frigging Manual"
 sleep 2
 echo " "
-echo "               About: `uname -o`"
-echo "               On: `hostname -f`"
-echo "               For: $USER"
+echo " About: `uname -o`"
+echo " On: `hostname -f`"
+echo " For: $USER"
 echo " "
 sleep 1
-echo "               Read It, Search It. Reference It."
+echo "Read It, Search It. Reference It."
 sleep 1
 echo " "
-echo "               Be Patient On Large Or Slow Systems"
+echo "Be Patient On Large Or Slow Systems"
 sleep 1
-echo "               Do Not Panic!"
+echo "Do Not Panic!"
 sleep 1
-echo "               Debug Set To Show Progress..."
+echo "Debug Set To Show Progress..."
 sleep 3
-echo " "
-echo "               If You Do Panic Just Hit CTRL+c"
+echo "If You Do Panic Just Hit CTRL+c"
 sleep 2
 echo " "
-echo "               Do You Have What It Takes To Run RTFM?"
+echo "Do You Have What It Takes To Run RTFM?"
 sleep 1
-
+echo " "
 # Hitting ENTER Continues 'TEXT'
 #
-echo " "
-read -n 1 -r -s -p $'               Hit Any KEY To Check.\n'
+read -n 1 -r -s -p $'Hit Any KEY To Check.\n'
 echo " "
 
-# Clear Screen And Display RTFM DEPENDENCIES
+# Clear Screen And Display DEPENDENCY CHECK
 #
 clear
 echo " "
-echo "                            *****************************"
-echo "                            *****************************"
-echo "                             _____ _______ ______ __  __ "
-echo "                            |  __ \__   __|  ____|  \/  |"
-echo "                            | |__) | | |  | |__  | \  / |"
-echo "                            |  _  /  | |  |  __| | |\/| |"
-echo "                            | | \ \  | |  | |    | |  | |"
-echo "                            |_|  \_\ |_|  |_|    |_|  |_|"
+echo "              *****************************"
+echo "              *****************************"
+echo "              ______ _______ ______ __  __ "
+echo "              |  __ \__   __|  ____|  \/  |"
+echo "              | |__) | | |  | |__  | \  / |"
+echo "              |  _  /  | |  |  __| | |\/| |"
+echo "              | | \ \  | |  | |    | |  | |"
+echo "              |_|  \_\ |_|  |_|    |_|  |_|"
 echo " "    
-echo "                                RTFM DEPENDENCY CHECK"
-echo "                                *********************"
+echo "                    DEPENDENCY CHECK"
+echo "                    ****************"
 echo " "
 
 # Play Notification Audio And Continuance Approval
 #
 aplay ./endbell.wav 2>/dev/null &
 
-# Check For And Display RTFM DEPENDENCIES Information
+# Check For And Display DEPENDENCY CHECK Information
 #
 #
 # Required
 # 
 echo " "
 echo "        REQUIRED"
+sleep 1
 
 # Bash
 #
@@ -129,6 +128,7 @@ echo "https://github.com/topics/bash"
 echo "Whatis:$(whatis bash 2>/dev/null)"
 echo "Whereis: $(whereis bash 2>/dev/null) "
 echo " "
+sleep 3
 
 #if whatis bash 2>/dev/null; then
 #    echo "        found bash version: $(bash --version | head -n 1)"
@@ -144,6 +144,7 @@ echo "Found Version: $(enscript --version 2>/dev/null)"
 echo "Whatis:$(whatis enscript 2>/dev/null)"
 echo "Whereis: $(whereis enscript 2>/dev/null)"
 echo " "
+sleep 3
 
 #if whereis enscript 2>/dev/null; then
 #    echo "        found enscript version: $(enscript --version | head -n 1 2>/dev/null)"
@@ -160,6 +161,7 @@ echo "https://ghostscript.com/"
 echo "Whatis:$(whatis ghostscrtipt 2>/dev/null)"
 echo "Whereis: $(whereis ghostscript 2>/dev/null) "
 echo " "
+sleep 3
 
 #if whereis ghostscript 2>/dev/null; then
 #    echo "        found ghostscript version: $(ghostscript --version 2>/dev/null)"
@@ -172,7 +174,7 @@ echo " "
 
 echo " "
 echo "           SUGGESTED"
-
+sleep 1
 
 # Alsa-Utils
 #
@@ -183,6 +185,7 @@ echo "Found Version: $(aplay --version 2>/dev/null)"
 echo "Whatis:$(whatis aplay 2>/dev/null)"
 echo "Whereis: $(whereis aplay 2>/dev/null) "
 echo " "
+sleep 3
 
 #if whereis cheat 2>/dev/null; then
 #    echo "        found aplay version: $(aplay --version 2>/dev/null)"
@@ -199,6 +202,7 @@ echo "Found Version: $(cheat --version 2>/dev/null)"
 #echo "$(cheat cheat 2>/dev/null)"
 echo "Whereis: $(whereis cheat 2>/dev/null) "
 echo " "
+sleep 3
 
 #if whereis cheat 2>/dev/null; then
 #    echo "        found cheat version: $(cheat --version 2>/dev/null)"
@@ -215,6 +219,7 @@ echo "https://github.com/tldr-pages/tldr"
 #echo "$(tldr tldr 2>/dev/null)"
 echo "Whereis: $(whereis tldr 2>/dev/null) "
 echo " "
+sleep 3
 
 #if whereis tldr 2>/dev/null; then
 #    echo "        found tldr"
@@ -232,6 +237,7 @@ echo "Found Version: $(bro --version 2>/dev/null)"
 #echo "Whatis:$(bro bro 2>/dev/null)"
 echo "Whereis: $(whereis bro 2>/dev/null) "
 echo " "
+sleep 3
 
 #if whereis bro 2>/dev/null; then
 #    echo "        found bro version  $(bro --version 2>/dev/null)"
@@ -244,7 +250,7 @@ echo " "
 
 echo " "
 echo "           ADVENTUROUS"
-
+sleep 1
 
 # Enscript2dropbox
 #
@@ -256,6 +262,7 @@ echo "Found Version: $(enscript2dropbox --version 2>/dev/null)"
 echo "Whatis:$(whatis enscript2dropbox 2>/dev/null)"
 echo "Whereis: $(whereis enscript2dropbox 2>/dev/null) "
 echo " "
+sleep 1
 
 #if whereis enscript2dropbox 2> /dev/null; then
 #    echo "        found $(enscript2dropbox --version 2>/dev/null)"
@@ -263,53 +270,49 @@ echo " "
 #    echo "        enscript2dropbox not found. No Worries ;)"
 #fi
 
-echo " "
-echo "           Verify You Have What It Takes Above."
+echo "           Verify You Have What It Takes Above Then"
 
 # Hitting ENTER Continues 'TEXT'
 #
-echo " "
-echo " "
-read -n 1 -r -s -p $'        Hit Any KEY To Continue - CTRL+c To Exit\n'
+read -n 1 -r -s -p $'           Hit Any KEY To Continue - CTRL+c To Exit\n'
 echo " "
 
-# Clear Screen And Display RTFM Texts Creation                                    
+# Clear Screen And Display TEXTS CREATION                                    
 #
 clear
 echo " "
-echo "                            *****************************"
-echo "                            *****************************"
-echo "                             _____ _______ ______ __  __ "
-echo "                            |  __ \__   __|  ____|  \/  |"
-echo "                            | |__) | | |  | |__  | \  / |"
-echo "                            |  _  /  | |  |  __| | |\/| |"
-echo "                            | | \ \  | |  | |    | |  | |"
-echo "                            |_|  \_\ |_|  |_|    |_|  |_|"
+echo "              *****************************"
+echo "              *****************************"
+echo "              ______ _______ ______ __  __ "
+echo "              |  __ \__   __|  ____|  \/  |"
+echo "              | |__) | | |  | |__  | \  / |"
+echo "              |  _  /  | |  |  __| | |\/| |"
+echo "              | | \ \  | |  | |    | |  | |"
+echo "              |_|  \_\ |_|  |_|    |_|  |_|"
 echo " "
-echo "                                   Texts Creation"
-echo "                                   **************"
+echo "                    TEXTS CREATION"
+echo "                    **************"
 echo " "
 sleep 1
 echo " "    
-echo "               If `hostname -f` Is Ready To Go"
-echo " "
-echo "               The Next Step Is To Create Text Documents For:"
-echo " "
+echo "If `hostname -f` Seems Ready To Go"
+echo "The Next Step Is To Create Text Documents For:"
 sleep 1
-echo "               1. A List Of Packages Installed"
-sleep 1
-echo "               2. A List Of Available Commands"
-sleep 1
-echo "               3. A Text Manual That Combines The Above With References"
 echo " "
+echo "1. A List Of User Environment Variables"
+sleep 1
+echo "2. A List Of Packages Installed"
+sleep 1
+echo "3. A List Of Available Commands"
+sleep 1
+echo "4. A Text Manual That Combines The Above With References"
 sleep 3
-echo " "
 
 # Hitting ENTER Continues 'TEXT'
 #
 echo " "
-read -n 1 -r -s -p $'               Hit Any KEY To Begin - CTRL+c To Exit\n'
-echo " "
+read -n 1 -r -s -p $'Hit Any KEY To Begin - CTRL+c To Exit\n'
+
 
 # TODO - Add A Looping Death Metal Soundtrack Via aplay Concurrent With The Debug Stream
 #
@@ -323,7 +326,7 @@ set -x
 
 # Create RTFM file And Wait 1 Second Before Creating The Text Files
 #
-touch RTFM
+touch rtfm.txt
 sleep 1
 
 # Populate RTFM Text File With System Manual Information
@@ -331,120 +334,157 @@ sleep 1
 #
 # Add Header Of Summary Section To Bottom Of RTFM File
 #
-echo "                                                                                     " >> RTFM
-echo "*************************************************************************************" >> RTFM
-echo "                             _____ _______ ______ __  __                             " >> RTFM
-echo "                            |  __ \__   __|  ____|  \/  |                            " >> RTFM
-echo "                            | |__) | | |  | |__  | \  / |                            " >> RTFM
-echo "                            |  _  /  | |  |  __| | |\/| |                            " >> RTFM
-echo "                            | | \ \  | |  | |    | |  | |                            " >> RTFM
-echo "                            |_|  \_\ |_|  |_|    |_|  |_|                            " >> RTFM
-echo "                                                                                     " >> RTFM
-echo "*************************************************************************************" >> RTFM
-echo "                                                                                     " >> RTFM
+echo " " >> rtfm.txt
+echo "*********************************************************" >> rtfm.txt
+echo "              ______ _______ ______ __  __ " >> rtfm.txt
+echo "              |  __ \__   __|  ____|  \/  |" >> rtfm.txt
+echo "              | |__) | | |  | |__  | \  / |" >> rtfm.txt
+echo "              |  _  /  | |  |  __| | |\/| |" >> rtfm.txt
+echo "              | | \ \  | |  | |    | |  | |" >> rtfm.txt
+echo "              |_|  \_\ |_|  |_|    |_|  |_|" >> rtfm.txt
+echo " " >> rtfm.txt
+echo "*********************************************************" >> rtfm.txt
+echo " " >> rtfm.txt
 
 #  Print The Generic OS Type "Manual for" The Logged In User "on" Fully Qualified System Name
 #
-echo "`uname -o` Manual for $USER on `hostname -f`:" >> RTFM
-echo " " >> RTFM
+echo "`uname -o` Manual for $USER on `hostname -f`:" >> rtfm.txt
+echo " " >> rtfm.txt
 
 # Get hostnamectl Information And Add To Bottom Of RTFM File
 #
-hostnamectl >> RTFM 2>&1
-echo " " >> RTFM
+hostnamectl >> rtfm.txt 2>&1
 
 # Get Number Of Installed Packages And Add To Bottom Of RTFM File
-# 
-echo " `apt list --installed | wc -l` packages currently installed" >> RTFM 2>/dev/null
-echo " " >> RTFM
+#
+echo " " >> rtfm.txt
+echo "`apt list --installed | wc -l` packages currently installed" >> rtfm.txt 2>/dev/null
+echo " " >> rtfm.txt
+echo "`env | wc -l` user environments currently set" >> rtfm.txt 2>/dev/null
+echo " " >> rtfm.txt
+echo "`compgen -bcegksuv | sort | uniq |wc -l` commands currently available" >> rtfm.txt 2>/dev/null
+echo " " >> rtfm.txt
+echo "`hostname -f` Storage Capacity" >> rtfm.txt 2>/dev/null
+echo " " >> rtfm.txt
+echo "`df -h`" >> rtfm.txt 2>/dev/null
+echo " " >> rtfm.txt 
 
 # Add Line Decoration To Bottom Of RTFM End Capping The Summary Section
 #
-echo " " >> RTFM
-echo "*************************************************************************************" >> RTFM
-echo " " >> RTFM
+echo " " >> rtfm.txt
+echo "*********************************************************" >> rtfm.txt
+echo " " >> rtfm.txt
 
 # Add TOC Header To Bottom Of RTFM File
 #
-echo " " >> RTFM
-echo "**************************" >> RTFM
-echo "         CONTENTS         " >> RTFM
-echo "           ****           " >> RTFM
-echo " " >> RTFM
-echo "  1. Installed Packages   " >> RTFM
-echo "  2. Available Commands   " >> RTFM
-echo "  3. Command References   " >> RTFM
-echo " " >> RTFM
-echo "**************************" >> RTFM
-echo " " >> RTFM
-    
+echo " " >> rtfm.txt
+echo "**************************" >> rtfm.txt
+echo "         CONTENTS         " >> rtfm.txt
+echo "           ****" >> rtfm.txt
+echo " " >> rtfm.txt
+echo "  1. User Environmental Varibles" >> rtfm.txt
+echo "  2. Installed Packages" >> rtfm.txt
+echo "  3. Available Commands" >> rtfm.txt
+echo "  4. Command References" >> rtfm.txt
+echo " " >> rtfm.txt
+echo "**************************" >> rtfm.txt
+echo " " >> rtfm.txt
+
+# Add Line Decoration To Bottom Of RTFM End Capping The TOC Section
+#
+echo " " >> rtfm.txt
+echo "*********************************************************" >> rtfm.txt
+echo " " >> rtfm.txt
+
 # Add Section 1 Header To Bottom Of RTFM File
 #
-echo " " >> RTFM
-echo "**************************" >> RTFM
-echo " " >> RTFM
-echo " 1. Installed Packages    " >> RTFM
-echo " " >> RTFM
-echo "**************************" >> RTFM
-echo " " >> RTFM
+echo " " >> rtfm.txt
+echo "**************************" >> rtfm.txt
+echo " " >> rtfm.txt
+echo " 1. User Environmental Varibles" >> rtfm.txt
+echo " " >> rtfm.txt
+echo "**************************" >> rtfm.txt
+echo " " >> rtfm.txt
 
 # Create packages file
 #
-touch packages
+touch environmentvars.txt
 
-
-# Get And Insert Installed Packages Into packages And Bottom Of RTFM File
+# Get And Insert Environment Variables Into env.txt And Bottom Of rtfm.txt File
 #
-apt list --installed > packages
-apt list --installed | cut -d / -f 1 packages >> RTFM
+echo "`env`" >> environmentvars.txt
+echo "`env`" >> rtfm.txt
 
-# Add Line Decoration To Bottom Of RTFM End Capping The Installed Packages Section
+# Add Line Decoration To Bottom Of rtfm.txt End Capping The User Variables Section
 #
-echo " " >> RTFM
-echo "*************************************************************************************" >> RTFM
-echo " " >> RTFM
+echo " " >> rtfm.txt
+echo "****************************************************" >> rtfm.txt
 
 # Add Section 2 Header To Bottom Of RTFM File
 #
-echo " " >> RTFM
-echo "**************************" >> RTFM
-echo " " >> RTFM
-echo " 2. Available Commands    " >> RTFM
-echo "                          " >> RTFM
-echo "**************************" >> RTFM
-echo " " >> RTFM
+echo " " >> rtfm.txt
+echo "**************************" >> rtfm.txt
+echo " " >> rtfm.txt
+echo "   2. Installed Packages" >> rtfm.txt
+echo " " >> rtfm.txt
+echo "**************************" >> rtfm.txt
+echo " " >> rtfm.txt
+
+# Create packages..txt file
+#
+touch packages.txt
+
+# Get And Insert Installed Packages Into packages..txt And Bottom Of RTFM File
+#
+apt list --installed > packages.txt
+apt list --installed | cut -d / -f 1 packages.txt >> rtfm.txt
+
+# Add Line Decoration To Bottom Of rtfm.txt End Capping The Installed Packages Section
+#
+echo " " >> rtfm.txt
+echo "****************************************************" >> rtfm.txt
+echo " " >> rtfm.txt
+
+# Add Section 3 Header To Bottom Of RTFM File
+#
+echo " " >> rtfm.txt
+echo "**************************" >> rtfm.txt
+echo " " >> rtfm.txt
+echo "   3. Available Commands" >> rtfm.txt
+echo " " >> rtfm.txt
+echo "**************************" >> rtfm.txt
+echo " " >> rtfm.txt
 
 # Create commands File. Get Available Command List. Add To commands File And To Bottom Of RTFM File.
 #
 #
 # Create commands file
 #
-touch commands
+touch commands.txt
 
 # Get And Add Available Commands To commands File
 #
-compgen -bcegksuv |sort|uniq > commands
+compgen -bcegksuv |sort|uniq > commands.txt
 
 # Get And Add Available Commands To Bottom Of RTFM File
 #
-compgen -bcegksuv |sort|uniq >> RTFM
+compgen -bcegksuv |sort|uniq >> rtfm.txt
 
 # Add Line Decoration To Bottom Of RTFM File End Capping The Available Commands Section
 #
-echo " " >> RTFM
-echo "*************************************************************************************" >> RTFM
-echo "  " >> RTFM
+echo " " >> rtfm.txt
+echo "**************************" >> rtfm.txt
+echo " " >> rtfm.txt
 
-# Add Section 3 Header To Bottom Of RTFM File
+# Add Section 4 Header To Bottom Of RTFM File
 #
-echo " " >> RTFM
-echo "**************************" >> RTFM
-echo " " >> RTFM
-echo "  3. Command References   " >> RTFM
-echo " " >> RTFM
-echo "**************************" >> RTFM
-echo " " >> RTFM
-
+echo " " >> rtfm.txt
+echo "**************************" >> rtfm.txt
+echo " " >> rtfm.txt
+echo "   4. Command References" >> rtfm.txt
+echo " " >> rtfm.txt
+echo "**************************" >> rtfm.txt
+echo " " >> rtfm.txt
 # A While-Loop That Queries Your System, Adds Informational Headers
 # And Reference Information For Each Line In commands To Bottom Of RTFM
 #
@@ -456,10 +496,10 @@ echo " " >> RTFM
     #
     # Sorry bro. Use at your own risk.
     #
-    #  * echo "** BRO-PAGES FOR $p      " >> RTFM
-    #  * bro lookup $p >> RTFM 2>/dev/null
+    #  * echo "*** BRO-PAGES FOR $p      " >> rtfm.txt
+    #  * bro lookup $p >> rtfm.txt 2>/dev/null
     #  * sleep 30
-    #  * echo "                         " >> RTFM
+    #  * echo "                         " >> rtfm.txt
     #
     # Send errors to nullwhere and give ample delay 
     # Rule Of Thumb: The more thankful you are to bro, the longer you set the sleep delay.
@@ -468,49 +508,49 @@ echo " " >> RTFM
     #
     # Plans to integrate howdoi may come in the future if SO abuse can be mitigated
     #
-    #  * echo "* howdoi $prevariable $p $postvariable " >> RTFM
-    #  * howdoi $prevariable $p $postvariable >> RTFM 2>&1
-    #  * echo "                                       " >> RTFM
+    #  * echo "*** howdoi $prevariable $p $postvariable" >> rtfm.txt
+    #  * howdoi $prevariable $p $postvariable >> rtfm.txt 2>&1
+    #  * echo " " >> rtfm.txt
     #
     # Help has been throwing errors for /write18 from Tex which could be expoitable - Use At Own Risk And Expect Bugs
     #
     #  * echo " "
-    #  * echo "** HELP $p                  " >> RTFM
-    #  * help $p                             >> RTFM 2>&1 HELP IS BUGGY
+    #  * echo "** HELP $p                  " >> rtfm.txt
+    #  * help $p                             >> rtfm.txt 2>&1 HELP IS BUGGY
 while read p; do
-    echo " " >> RTFM
-    echo "*************************************************************************************" >> RTFM
-    echo "  " >> RTFM
-    echo "************************************************" >> RTFM 
-    echo "                                            " >> RTFM
-    echo "          The $p COMMAND Reference          " >> RTFM
-    echo "                                            " >> RTFM
-    echo "************************************************" >> RTFM
-    echo " " >> RTFM
-    echo "*************************************************************************************" >> RTFM
-    echo "  " >> RTFM
-    whatis $p >> RTFM 2>&1
-    echo "                            " >> RTFM
-    echo "** WHEREIS $p ?             " >> RTFM 
-    whereis $p >> RTFM 2>&1
-    echo "                            " >> RTFM
-    echo "** MAN PAGE FOR $p          " >> RTFM
-    man $p >> RTFM 2>&1
-    echo "                            " >> RTFM
-    echo "** TLDR FOR $p              " >> RTFM
-    tldr $p >> RTFM 2>&1
-    echo "                            " >> RTFM
-    echo "** CHEAT $p                 " >> RTFM
-    cheat $p >> RTFM 2>&1
-    echo "                            " >> RTFM
-    echo "                            " >> RTFM
-    echo "** $p ALSO MATCHES          " >> RTFM
-    apropos -e $p >> RTFM 2>&1
-    echo "                            " >> RTFM
-done < commands
-echo " " >> RTFM
-echo "*************************************************************************************" >> RTFM
-echo " " >> RTFM
+    echo " " >> rtfm.txt
+    echo "**************************" >> rtfm.txt
+    echo " " >> rtfm.txt
+    echo "**************************" >> rtfm.txt 
+    echo " " >> rtfm.txt
+    echo "The $p COMMAND Reference" >> rtfm.txt
+    echo " " >> rtfm.txt
+    echo "**************************" >> rtfm.txt
+    echo " " >> rtfm.txt
+    echo "**************************" >> rtfm.txt
+    echo " " >> rtfm.txt
+    whatis $p >> rtfm.txt 2>&1
+    echo " " >> rtfm.txt
+    echo "*** WHEREIS $p ?" >> rtfm.txt 
+    whereis $p >> rtfm.txt 2>&1
+    echo " " >> rtfm.txt
+    echo "*** MAN PAGE FOR $p" >> rtfm.txt
+    man $p >> rtfm.txt 2>&1
+    echo " " >> rtfm.txt
+    echo "*** TLDR FOR $p" >> rtfm.txt
+    tldr $p >> rtfm.txt 2>&1
+    echo " " >> rtfm.txt
+    echo "*** CHEAT $p" >> rtfm.txt
+    cheat $p >> rtfm.txt 2>&1
+    echo " " >> rtfm.txt
+    echo "*** $p ALSO MATCHES" >> rtfm.txt
+    apropos -e $p >> rtfm.txt 2>&1
+    echo " " >> rtfm.txt
+done < commands.txt
+
+echo " " >> rtfm.txt
+echo "****************************************************" >> rtfm.txt
+echo " " >> rtfm.txt
 
 # Stop Sending Debug Information To Terminal Screen
 #
@@ -520,50 +560,44 @@ set +x
 #
 aplay ./endbell.wav 2>/dev/null
 
-
-# Clear Screen And Display RTFM TEXT CREATED Panel
+# Clear Screen And Display TEXTS CREATED
 #
 clear
 echo " "
-echo "                            *****************************"
-echo "                            *****************************"
-echo "                             _____ _______ ______ __  __ "
-echo "                            |  __ \__   __|  ____|  \/  |"
-echo "                            | |__) | | |  | |__  | \  / |"
-echo "                            |  _  /  | |  |  __| | |\/| |"
-echo "                            | | \ \  | |  | |    | |  | |"
-echo "                            |_|  \_\ |_|  |_|    |_|  |_|"
+echo "              *****************************"
+echo "              *****************************"
+echo "              ______ _______ ______ __  __ "
+echo "              |  __ \__   __|  ____|  \/  |"
+echo "              | |__) | | |  | |__  | \  / |"
+echo "              |  _  /  | |  |  __| | |\/| |"
+echo "              | | \ \  | |  | |    | |  | |"
+echo "              |_|  \_\ |_|  |_|    |_|  |_|"
 echo " "
-echo "                                   TEXTS CREATED"
-echo "                                   *************"
+echo "                     TEXTS CREATED"
+echo "                     *************"
 echo " "
-echo "                 Texts Available: RTFM, packages & commands"
+echo "Texts Available: rtfm, environmentvars, packages & commands"
 echo " "
-echo "                 Copy Them If You Need Them. "
-echo "                 Current Settings May Delete Them After PDF Creation"
+echo "Copy Or Edit Them Now."
+echo "Current Settings May Delete Them After PDF Creation"
 echo " "
-echo "                 Saved RTFM edits will transfer to .ps file"
-echo "                 and then into pdf file created"
-echo "                                               "
-echo "                                               "
+echo "Saved rtfm.txt edits will transfer to .ps file"
+echo "and then into pdf file created"
+echo " "
 
 # Hitting ENTER Continues 'TEXT'
 #
-read -n 1 -r -s -p $'                 Hit Any KEY To Create PDF - CRTL+c To Exit\n'
+read -n 1 -r -s -p $'Hit Any KEY To Create PS - CRTL+c To Exit\n'
 echo " "
-
-
 
 # Clear And Start Sending Debug Information To Terminal Screen
 #
 clear
 set -x
 
-    
-
 # Turn RTFM Text File Into RTFM.ps Postscript File Then End Debug
 #
-enscript -p RTFM.ps RTFM
+enscript -p rtfm.ps rtfm.txt
 set +x
 
 
@@ -571,100 +605,94 @@ set +x
 #
 clear
 echo " "
-echo "                            *****************************"
-echo "                            *****************************"
-echo "                             _____ _______ ______ __  __ "
-echo "                            |  __ \__   __|  ____|  \/  |"
-echo "                            | |__) | | |  | |__  | \  / |"
-echo "                            |  _  /  | |  |  __| | |\/| |"
-echo "                            | | \ \  | |  | |    | |  | |"
-echo "                            |_|  \_\ |_|  |_|    |_|  |_|"
+echo "              *****************************"
+echo "              *****************************"
+echo "              ______ _______ ______ __  __ "
+echo "              |  __ \__   __|  ____|  \/  |"
+echo "              | |__) | | |  | |__  | \  / |"
+echo "              |  _  /  | |  |  __| | |\/| |"
+echo "              | | \ \  | |  | |    | |  | |"
+echo "              |_|  \_\ |_|  |_|    |_|  |_|"
 echo " "
-echo "                                    PS CREATED"
-echo "                                    **********"
+echo "                      PS CREATED"
+echo "                      **********"
 echo " "
-echo "               Your Postscript File Has Been Created"
-echo "               It Will Be There If You Commented Out It's Removal"
-echo "               On To PDF Creation...Wait For It."
+echo "Your Postscript File Has Been Created"
+echo "Current Settings May Delete Them After PDF Creation"
 echo " "
+read -n 1 -r -s -p $'Hit Any KEY To Create PDF - CTRL+c To Exit\n'
 echo " "
-sleep 6
-
 
 # Clear And Start Sending Debug Information To Terminal Screen
 #
 clear
 set -x
 
-
 # Turn RTFM.ps File Into RTFM.pdf PDF File. Play Bell. End Debug.
 #
-ps2pdf RTFM.ps RTFM.pdf
+ps2pdf rtfm.ps rtfm.pdf
 
-
-# Optional Removal Of Intermediate Files
+# Optional Removal Of Created Files
 #
-# rm packages
-# rm commands
-# rm RTFM
-# rm RTFM.ps
+rm environmentvars.txt
+rm packages.txt
+rm commands.txt
+rm rtfm.txt
+rm rtfm.ps
+#rm rtfm.pdf
 #
-
 
 # Play Notification Audio
 #
 aplay ./endbell.wav 2>/dev/null
-
 
 # Stop Sending Debug Information To Terminal Screen
 #
 #
 set +x
 
-
-# Clear Screen And Display RTFM PDF CREATED Panel
+# Clear Screen And Display PDF CREATED
 #
 clear
 echo " "
-echo "                            *****************************"
-echo "                            *****************************"
-echo "                             _____ _______ ______ __  __ "
-echo "                            |  __ \__   __|  ____|  \/  |"
-echo "                            | |__) | | |  | |__  | \  / |"
-echo "                            |  _  /  | |  |  __| | |\/| |"
-echo "                            | | \ \  | |  | |    | |  | |"
-echo "                            |_|  \_\ |_|  |_|    |_|  |_|"
+echo "              *****************************"
+echo "              *****************************"
+echo "              ______ _______ ______ __  __ "
+echo "              |  __ \__   __|  ____|  \/  |"
+echo "              | |__) | | |  | |__  | \  / |"
+echo "              |  _  /  | |  |  __| | |\/| |"
+echo "              | | \ \  | |  | |    | |  | |"
+echo "              |_|  \_\ |_|  |_|    |_|  |_|"
 echo " "
-echo "                                    PDF CREATED"
-echo "                                    ***********"
+echo "                      PDF CREATED"
+echo "                      ***********"
 echo " "
-echo "               RTFM Is Done."
-echo "               A Brand New RTFM PDF For $USER. No More Excuses."
+echo "RTFM Is Done."
+echo "A Brand New RTFM PDF For $USER. No More Excuses."
 echo " "
-echo " "
-read -n 1 -r -s -p $'               Hit Any KEY To RTFM in xpdf - CTRL+c To Exit\n'
+read -n 1 -r -s -p $' Hit Any KEY To RTFM in xpdf - CTRL+c To Exit\n'
 
-# Open RTFM.pdf in xpdf Viewer
+# Open rtfm.pdf in xpdf Viewer
 #
-xpdf RTFM.pdf &
+xpdf rtfm.pdf &
 
-# Clear And Goodbye
+# Clear Screen And Display THAT WAS FUN
 #
 clear
 echo " "
-echo "                            *****************************"
-echo "                            *****************************"
-echo "                             _____ _______ ______ __  __ "
-echo "                            |  __ \__   __|  ____|  \/  |"
-echo "                            | |__) | | |  | |__  | \  / |"
-echo "                            |  _  /  | |  |  __| | |\/| |"
-echo "                            | | \ \  | |  | |    | |  | |"
-echo "                            |_|  \_\ |_|  |_|    |_|  |_|"
+echo "              *****************************"
+echo "              *****************************"
+echo "              ______ _______ ______ __  __ "
+echo "              |  __ \__   __|  ____|  \/  |"
+echo "              | |__) | | |  | |__  | \  / |"
+echo "              |  _  /  | |  |  __| | |\/| |"
+echo "              | | \ \  | |  | |    | |  | |"
+echo "              |_|  \_\ |_|  |_|    |_|  |_|"
 echo " "
-echo "                                    That Was Fun"
-echo "                                    ************"
+echo "                      THAT WAS FUN"
+echo "                      ************"
 echo " "
-echo "                                   Goodbye. Go RTFM."
+echo "                     Goodbye. Go RTFM."
 echo " "
 echo " "
 sleep 4  
