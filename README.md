@@ -5,9 +5,7 @@
 
 ## No more excuses. 
 
-## Make a manual. 
-
-## Read, search & reference it!
+## Make a manual and use it.
 
 ### Please Be Aware:
 
