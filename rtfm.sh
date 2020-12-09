@@ -643,10 +643,6 @@ set -x
 #
 ps2pdf rtfm.ps rtfm.pdf
 
-# Play Notification Audio And Continuance Approval
-#
-aplay ./endbell.wav 2>/dev/null &
-
 # Optional Removal Of Created Files
 #
 #rm environmentvars.txt
@@ -661,6 +657,10 @@ aplay ./endbell.wav 2>/dev/null &
 #
 #
 set +x
+
+# Play Notification Audio And Continuance Approval
+#
+aplay ./endbell.wav 2>/dev/null &
 
 # Clear Screen And Display PDF CREATED
 #
