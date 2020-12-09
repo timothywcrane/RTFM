@@ -20,9 +20,9 @@
                 # * Name    : rtfm.sh - Read The Frigging Manual          * #
                 # *           Shell Script                                * #
                 # *                                                       * #
-                # * Description    : A simple Bash script         * #
-                # *     that creates a frigging user manual on your       * #
-                # *     system for you to read, search and reference.     * #
+                # * Description    : A simple Bash script                 * #
+                # *     that creates a frigging system manual for you     * #
+                # *     to read, search and reference.                    * #
                 # *                                                       * #
                 # *     No more excuses. Make a manual and use it.        * #
                 # *                                                       * #
@@ -78,16 +78,15 @@ echo "Do Not Panic!"
 sleep 1
 echo "Debug Set To Show Progress..."
 sleep 3
+echo " "
 echo "If You Do Panic Just Hit CTRL+c"
 sleep 2
-echo " "
 echo "Do You Have What It Takes To Run RTFM?"
 sleep 1
-echo " "
+
 # Hitting ENTER Continues 'TEXT'
 #
 read -n 1 -r -s -p $'Hit Any KEY To Check.\n'
-echo " "
 
 # Clear Screen And Display DEPENDENCY CHECK
 #
@@ -275,7 +274,6 @@ echo "           Verify You Have What It Takes Above Then"
 # Hitting ENTER Continues 'TEXT'
 #
 read -n 1 -r -s -p $'           Hit Any KEY To Continue - CTRL+c To Exit\n'
-echo " "
 
 # Clear Screen And Display TEXTS CREATION                                    
 #
@@ -312,7 +310,7 @@ sleep 3
 #
 echo " "
 read -n 1 -r -s -p $'Hit Any KEY To Begin - CTRL+c To Exit\n'
-
+aplay ./endbell.wav 2>/dev/null
 
 # TODO - Add A Looping Death Metal Soundtrack Via aplay Concurrent With The Debug Stream
 #
@@ -588,7 +586,11 @@ echo " "
 # Hitting ENTER Continues 'TEXT'
 #
 read -n 1 -r -s -p $'Hit Any KEY To Create PS - CRTL+c To Exit\n'
-echo " "
+
+
+# Play Notification Audio
+#
+aplay ./endbell.wav 2>/dev/null
 
 # Clear And Start Sending Debug Information To Terminal Screen
 #
@@ -634,11 +636,11 @@ ps2pdf rtfm.ps rtfm.pdf
 
 # Optional Removal Of Created Files
 #
-rm environmentvars.txt
-rm packages.txt
-rm commands.txt
-rm rtfm.txt
-rm rtfm.ps
+#rm environmentvars.txt
+#rm packages.txt
+#rm commands.txt
+#rm rtfm.txt
+#rm rtfm.ps
 #rm rtfm.pdf
 #
 
@@ -671,6 +673,10 @@ echo "RTFM Is Done."
 echo "A Brand New RTFM PDF For $USER. No More Excuses."
 echo " "
 read -n 1 -r -s -p $' Hit Any KEY To RTFM in xpdf - CTRL+c To Exit\n'
+
+# Play Notification Audio And Continuance Approval
+#
+aplay ./endbell.wav 2>/dev/null &
 
 # Open rtfm.pdf in xpdf Viewer
 #
