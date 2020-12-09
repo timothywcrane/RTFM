@@ -29,7 +29,7 @@
                 # *                   Do Not Panic!                       * #
                 # *                                                       * #
                 # *                                                       * #
-                # * Version  :  Pre-Alpha-0.0.3 Codename: UglyTruth       * #
+                # * Version  :  Pre-Alpha-0.0.4 Codename: UglyTruth       * #
                 # *                                                       * #
                 # * Author   :  Timothy W. Crane                          * #
                 # *                                                       * #
@@ -88,6 +88,10 @@ sleep 1
 #
 read -n 1 -r -s -p $'Hit Any KEY To Check.\n'
 
+# Play Notification Audio And Continuance Approval
+#
+aplay ./endbell.wav 2>/dev/null &
+
 # Clear Screen And Display DEPENDENCY CHECK
 #
 clear
@@ -104,10 +108,6 @@ echo " "
 echo "                    DEPENDENCY CHECK"
 echo "                    ****************"
 echo " "
-
-# Play Notification Audio And Continuance Approval
-#
-aplay ./endbell.wav 2>/dev/null &
 
 # Check For And Display DEPENDENCY CHECK Information
 #
@@ -275,6 +275,10 @@ echo "           Verify You Have What It Takes Above Then"
 #
 read -n 1 -r -s -p $'           Hit Any KEY To Continue - CTRL+c To Exit\n'
 
+# Play Notification Audio And Continuance Approval
+#
+aplay ./endbell.wav 2>/dev/null &
+
 # Clear Screen And Display TEXTS CREATION                                    
 #
 clear
@@ -310,7 +314,10 @@ sleep 3
 #
 echo " "
 read -n 1 -r -s -p $'Hit Any KEY To Begin - CTRL+c To Exit\n'
-aplay ./endbell.wav 2>/dev/null
+
+# Play Notification Audio And Continuance Approval
+#
+aplay ./endbell.wav 2>/dev/null &
 
 # TODO - Add A Looping Death Metal Soundtrack Via aplay Concurrent With The Debug Stream
 #
@@ -587,7 +594,6 @@ echo " "
 #
 read -n 1 -r -s -p $'Hit Any KEY To Create PS - CRTL+c To Exit\n'
 
-
 # Play Notification Audio
 #
 aplay ./endbell.wav 2>/dev/null
@@ -623,7 +629,10 @@ echo "Your Postscript File Has Been Created"
 echo "Current Settings May Delete Them After PDF Creation"
 echo " "
 read -n 1 -r -s -p $'Hit Any KEY To Create PDF - CTRL+c To Exit\n'
-echo " "
+
+# Play Notification Audio And Continuance Approval
+#
+aplay ./endbell.wav 2>/dev/null
 
 # Clear And Start Sending Debug Information To Terminal Screen
 #
@@ -634,6 +643,10 @@ set -x
 #
 ps2pdf rtfm.ps rtfm.pdf
 
+# Play Notification Audio And Continuance Approval
+#
+aplay ./endbell.wav 2>/dev/null &
+
 # Optional Removal Of Created Files
 #
 #rm environmentvars.txt
@@ -643,10 +656,6 @@ ps2pdf rtfm.ps rtfm.pdf
 #rm rtfm.ps
 #rm rtfm.pdf
 #
-
-# Play Notification Audio
-#
-aplay ./endbell.wav 2>/dev/null
 
 # Stop Sending Debug Information To Terminal Screen
 #
